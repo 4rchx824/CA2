@@ -27,14 +27,29 @@ img {
     /* padding: 5px; */
 }
 
+.row > .valuesEducation > div > div.title.row {
+    /* background-color: rgba(50, 149, 255, 0.75) */
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+    text-decoration-color: rgba(50, 149, 255, 0.75);
+    padding: 1em;
+}
+
+
+.row > div > div > .row > ul > li {
+    list-style-type: none;
+}
+
+
 
 /* .pictures {
     width: 50%;
 } */
 
+
 ::-webkit-scrollbar {
-    width: 10px;
-}
+    width: 5px;
+} 
 
 ::-webkit-scrollbar-track {
     background: lightgray;
@@ -43,3 +58,5 @@ img {
 ::-webkit-scrollbar-thumb {
     background: gray;
 }
+
+
