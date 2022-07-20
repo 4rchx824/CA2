@@ -42,13 +42,22 @@ img:hover {
     box-shadow: 0px 5px 10px gray;
 }
 
-.row > .valuesEducation > div > div.title.row {
-    /* text-decoration: underline; */
+/* .row > .valuesEducation > div > div.title.row {
+    text-decoration: underline;
+    text-underline-offset: 0.1em;
+    text-decoration-color: rgba(50, 149, 255, 0.75);
+    padding: 1em;
+    text-shadow: 1px 5px 10px gray;
+} */
+
+.title.row {
     text-underline-offset: 0.1em;
     text-decoration-color: rgba(50, 149, 255, 0.75);
     padding: 1em;
     text-shadow: 1px 5px 10px gray;
 }
+
+
 
 
 .row > div > div > .row > ul > li {
@@ -68,6 +77,106 @@ img:hover {
 } */
 
 
+body > div > div:nth-child(5) > div.personality.row > div:nth-child(1) > div:nth-child(1) > div > div.card-header {
+    animation-name: backgroundPersonality1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(133, 145, 255) 0%, rgba(35,76,255,1) 100%);
+    background-size: 400% 400%;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div:nth-child(1) > div:nth-child(2) > div > div.card-header {
+    animation-name: backgroundPersonality2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(230, 120, 255) 0%, rgba(35,76,255,1) 100%);
+    background-size: 400% 400%;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div:nth-child(1) > div:nth-child(3) > div > div.card-header {
+    animation-name: backgroundPersonality3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(90, 255, 109) 0%, rgba(35,76,255,1) 100%);
+    background-size: 400% 400%;
+}
+
+
+@keyframes backgroundPersonality1 {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+
+@keyframes backgroundPersonality2 {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+
+@keyframes backgroundPersonality3 {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
+}
+
+
+/* Personality Coloring */
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(1) > div > div.card-header {
+    background-color: #4298b4;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(2) > div > div.card-header {
+    background-color: #e4ae3a;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(3) > div > div.card-header {
+    background-color: #33a474;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(4) > div > div.card-header {
+    background-color: #88619a;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(5) > div > div.card-header {
+    background-color: #f25e62;
+}
+
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(1) > div > div.card-body > div > div {
+    width: 62%;
+    background-color: #4298b4;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(2) > div > div.card-body > div > div {
+    width: 64%;
+    background-color: #e4ae3a;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(3) > div > div.card-body > div > div {
+    width: 53%;
+    background-color: #33a474;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(4) > div > div.card-body > div > div {
+    width: 51%;
+    background-color: #88619a;
+}
+
+body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(5) > div > div.card-body > div > div {
+    width: 57%;
+    background-color: #f25e62;
+}
+
+
+
+
+/* Scroll Bar Customisation */
+
 ::-webkit-scrollbar {
     width: 5px;
 } 
@@ -79,5 +188,6 @@ img:hover {
 ::-webkit-scrollbar-thumb {
     background: gray;
 }
+
 
 
