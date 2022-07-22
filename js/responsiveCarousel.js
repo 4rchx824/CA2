@@ -1,1 +1,1 @@
-ale
+// alert("Small Screen")

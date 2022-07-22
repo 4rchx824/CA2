@@ -38,7 +38,11 @@ img {
     /* border-radius: 15%; */
 }
 
-img:hover {
+/* img:hover {
+    
+} */
+
+.body *> img:hover {
     box-shadow: 0px 5px 10px gray;
 }
 
@@ -188,6 +192,71 @@ body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.m
     height: 507px;
 }
 
+
+
+
+/* Timetable coloring */
+div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table > thead > tr > th {
+    background-color: rgba(90, 201, 235, 0.15)
+}
+
+
+.CAT {
+    background-color: rgba(255, 200, 255, 0.5);
+}
+
+
+
+.CPR {
+    background-color: rgba(255, 240, 200, 0.75);
+}
+
+
+
+.ECG {
+    background-color: rgba(225, 200, 255, 0.5)
+}
+
+
+
+.FED {
+    background-color: rgba(255, 200, 200, 0.5)
+}
+
+
+
+.FOC {
+    background-color: rgba(145, 255, 255, 0.5);
+}
+
+
+
+.FOP {
+    background-color: rgba(200, 255, 200, 0.5);
+}
+
+
+
+.MATH {
+    background-color: rgba(255, 255, 200, 0.5);
+}
+
+
+
+.SFL {
+    background-color: rgba(135, 135, 255, 0.25);
+}
+
+
+
+/* Footer Customising */
+/* body > div.container-fluid.bg-primary > div > div > div.col-sm-4.d-flex.align-items-center > div > div > a > img {
+    width: 25%;
+    height: 25%;
+} */
+
+
+
 /* Scroll Bar Customisation */
 
 ::-webkit-scrollbar {
@@ -204,3 +273,10 @@ body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.m
 
 
 
+/* Responsive CSS for mobile */
+
+/* @media (max-width: 576px) {
+    .introImg {
+        display: none;
+    }
+} */
