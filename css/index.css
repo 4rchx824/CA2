@@ -247,6 +247,9 @@ div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table >
     background-color: rgba(135, 135, 255, 0.25);
 }
 
+.bottomrow {
+    visibility: collapse;
+}
 
 
 /* Footer Customising */
