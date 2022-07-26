@@ -1,0 +1,19 @@
+#floatingTextarea1 {
+    height: 250px;
+    resize: none;
+}
+
+hr {
+    height: 3px !important; 
+    background-color: rgba(50, 149, 255, 0.75) !important;
+    opacity: 1;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    text-shadow: 0px 5px 5px gray;
+}

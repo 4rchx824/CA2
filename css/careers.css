@@ -1,0 +1,59 @@
+hr {
+    height: 3px !important; 
+    background-color: rgba(50, 149, 255, 0.75) !important;
+    opacity: 1;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    text-shadow: 0px 5px 5px gray;
+}
+
+body > div.body.container-fluid.w-75 > div.row.mb-5 > div:nth-child(1) > div > div.card-header {
+    animation-name: backgroundCareer1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(42, 245, 255) 0%, rgb(231, 134, 255) 100%);
+    background-size: 400% 400%;
+}
+
+body > div.body.container-fluid.w-75 > div.row.mb-5 > div:nth-child(2) > div > div.card-header {
+    animation-name: backgroundCareer2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(42, 245, 255) 0%, rgb(231, 134, 255) 100%);
+    background-size: 400% 400%;
+}
+
+body > div.body.container-fluid.w-75 > div.row.mb-5 > div:nth-child(3) > div > div.card-header {
+    animation-name: backgroundCareer3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(42, 245, 255) 0%, rgb(231, 134, 255) 100%);
+    background-size: 400% 400%;
+}
+
+@keyframes backgroundCareer1 {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 30%}
+}
+
+@keyframes backgroundCareer2 {
+    0%{background-position:0% 20%}
+    50%{background-position:90% 91%}
+    100%{background-position:20% 0%}
+}
+
+@keyframes backgroundCareer3 {
+    0%{background-position:0% 30%}
+    50%{background-position:80% 91%}
+    100%{background-position:0% 10%}
+}

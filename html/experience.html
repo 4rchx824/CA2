@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Experience</title>
+    
+        <!--Icon for Website Title-->
+        <!-- Image Credit: https://www.sp.edu.sg/docs/default-source/soc/fo-2022-programme---soc-rel1.pdf?sfvrsn=131e35b3_6 -->
+        <link rel="shortcut icon" href="../graphics/logos/dit.png" />
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous"
+        />
+    
+        <!-- Bootstrap Icons -->
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+        />
+    
+        <!-- Javascripts   Bootstrap -->
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+          crossorigin="anonymous"
+        ></script>
+    
+        <script src="../js/calculator.js" async></script>
+    
+        <link href="../css/defaultStyles.css" rel="stylesheet" />
+        <link href="../css/experience.css" rel="stylesheet" />
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid w-75">
+              <a class="navbar-brand" href="#">
+                <h1>YAN HEIN LATT</h1>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="../html/experience.html">Experience</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/careers.html">Careers</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a class="nav-link" href="../html/feedback.html">Feedback</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+        <div class="body container-fluid w-75">
+            <div class="title row mt-2 mb-1">
+                <h2>Current Experiences</h2>
+            </div>
+
+            <div class="row">
+                <hr />
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <p class="p-1">
+                        I am currently enjoying my life is Poly, the whole class seems very relaxed, and everyone seems to be comfortable and get along well with each other!
+                    </p>
+
+                    <p class="p-1">
+                        My current modules include Fundamentals of Programming, Fundamentals of Front-End Web Development, Fundamentals of Computing, Mathematics, Communication for Project Proposal, Critical and Analytical Thinking and Sports for Life! The photo gallery on the right has some of our group selfies up until now.
+                    </p>
+
+                    <p class="p-1">
+                        I have tried joining some CCAs in SP, however, I didn't manage to pass my Basketball and Badminton trials as they were very hard. Therefore, I am considering joining SOCA, SOCC or SEED. I have currently participated in one event within SP which is the One Heart Service-Learning Event! The 2nd wide picture depicts my group during the bonding day!
+                    </p>
+                </div>
+
+                <div class="col-sm-6">
+                    <img src="../graphics/experience/class2.jpg" class="rounded"/>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-sm-12">
+                    <div class="title row">
+                        <h2 class="text-center">
+                            My Personal Project: Programmer's Calculator
+                        </h2>
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="container p-0">
+                        <div class="card mb-3 shadow">
+                            <div class="card-header bg-success">
+                                <h5 class="text-center">Decimal</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <button type="button" class="btn btn-outline-success mb-1 w-50" onclick="setCalcType(1);decInput()">Decimal to Binary</button>
+                                <br />
+                                <button type="button" class="btn btn-outline-success mb-1 w-50" onclick="setCalcType(2);decInput()">Decimal to Hexadecimal</button>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 shadow">
+                            <div class="card-header bg-danger">
+                                <h5 class="text-center">Binary</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <button type="button" class="btn btn-outline-danger mb-1 w-50" onclick="setCalcType(3);binInput()">Binary to Decimal</button>
+                                <button type="button" class="btn btn-outline-danger mb-1 w-50" onclick="setCalcType(4);binInput()">Binary to Hexadecimal</button>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 shadow">
+                            <div class="card-header bg-warning">
+                                <h5 class="text-center">Hexadecimal</h5>
+                            </div>
+                            <div class="card-body text-center">
+                                <button type="button" class="btn btn-outline-warning mb-1 w-50" onclick="setCalcType(5);hexInput()">Hexadecimal to Decimal</button>
+                                <button type="button" class="btn btn-outline-warning mb-1 w-50" onclick="setCalcType(6);hexInput()">Hexadecimal to Binary</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 my-auto">
+                    <div class="container p-0" id="calculator">
+                        <div class="row">
+                            <div class="col text-center" id="calculatorMode">
+                                <div class="card w-75 mx-auto border border-primary mb-3">
+                                    <div class="card-body text-primary p-0">
+                                        <h5 class="p-1 m-0" id="calculatorMode">
+                                            Calculator Mode: None
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 text-right w-75 mx-auto p-0 h-50">
+                                <h2 class="shadow-lg border p-1" id="calculatorOutput">
+                                    
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col text-center">
+                                <ul class="list-unstyled" id="calculatorBtns">
+                                    <li class="mb-1">
+                                        <button type="button" class="btn btn-outline-primary btn-lg w-25" disabled>A</button>
+                                        <button type="button" class="btn btn-outline-primary btn-lg w-25" disabled>B</button>
+                                        <button type="button" class="btn btn-outline-primary btn-lg w-25" disabled>C</button>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <button type="button" class="btn btn-outline-primary btn-lg w-25" disabled>D</button>
+                                        <button type="button" class="btn btn-outline-primary btn-lg w-25" disabled>E</button>
+                                        <button type="button" class="btn btn-outline-primary btn-lg w-25" disabled>F</button>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">7</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">8</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">9</button>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">4</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">5</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">6</button>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">1</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">2</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">3</button>
+                                    </li>
+
+                                    <li class="mb-1">
+                                        <button type="button" class="btn btn-outline-danger btn-lg w-25">Clear</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-lg w-25">0</button>
+                                        <button type="button" class="btn btn-outline-danger btn-lg w-25">=</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="row mt-5">
+                <div class="row">
+                    <h2 class="title text-center">Courses Offered in SP School of Computing (SOC)</h2>
+                    <hr />
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-3 mb-5">
+                        <div class="card shadow-lg">
+                            <div class="card-header">
+                                <h5 class="title text-center">Common ICT Programme (S32)</h5>
+                            </div>
+
+                            <img src="../graphics/experience/dcitpimg.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <p>
+                                    Are you passionate about Information Technology (IT) but undecided about which IT course to take? The Common ICT Programme is designed to help you make an informed choice. At the end of Year 1 Semester 1, you will be able to make an informed choice in selecting one of the IT courses that you wish to pursue:
+                                </p>
+
+                                <p>
+                                    <ul>
+                                        <li>S30 Diploma in Applied AI & Analytics (DAAA)</li>
+                                        <li>S54 Diploma in Infocomm Security Management (DISM)</li>
+                                        <li>S69 Diploma in Information Technology (DIT)</li>
+                                    </ul>
+                                </p>
+
+                                <p>
+                                    Net JAE (ELR2B2): 3 to 13
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-3 mb-5">
+                        <div class="card shadow-lg">
+                            <div class="card-header">
+                                <h5 class="title text-center">Applied AI and Analytics (S30)</h5>
+                            </div>
+
+                            <img src="../graphics/experience/daaaimg.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <p>
+                                    Believe it or not, you interact with a form of AI (Artificial Intelligence) every day! From Siri to Google Home and online chatbots, data analytics and AI make it possible for devices and programmes to respond to us in an almost human-like manner.
+                                </p>
+
+                                <p>
+                                    This is changing how we live, work and communicate. Soon, it will become an integral part of our daily lives. The question is, are you interested to develop the next AI application that benefits our world?
+                                </p>
+
+                                <p>
+                                    If your answer is yes, the Diploma in Applied AI & Analytics (DAAA) is perfect for you!
+                                </p>
+
+                                <p>
+                                    Net JAE (ELR2B2): 3 to 8
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-lg-3 mb-5">
+                        <div class="card shadow-lg">
+                            <div class="card-header">
+                                <h5 class="title text-center">Infocomm Security Management (S54)</h5>
+                            </div>
+
+                            <img src="../graphics/experience/dismimg.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <p>
+                                    The threat has never been so real. The more we rely on the Internet to store and manage important information, the more we need to keep it safe from cybercriminals. Be a part of the elite force in keeping the Cyber World SAFE!
+                                </p>
+
+                                <p>
+                                    Being a Diploma in Infocomm Security Management (DISM) student gives you the competitive edge for a boost in your future studies and career. You can look forward to an interesting curriculum that covers offensive attacks, defensive methods and investigative skills.
+                                </p>
+
+                                <p>
+                                    Net JAE (ELR2B2): 4 to 11
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-3 mb-5">
+                        <div class="card shadow-lg">
+                            <div class="card-header">
+                                <h5 class="title text-center">Information Technology (S69)</h5>
+                            </div>
+
+                            <img src="../graphics/experience/ditimg.jpg" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <p>
+                                    Information Technology (IT) is the driving force behind many digital transformations we see and use today, including the Smart Nation vision.
+                                </p>
+
+                                <p>
+                                    In Singapore, there continues to be a strong demand for IT professionals in Software Development and User Experience (UX) design, and in Immersive Simulation Technologies such as Augmented and Virtual Reality.
+                                </p>
+
+                                <p>
+                                    The Diploma in Information Technology (DIT) course is positioned to focus on Software & Applications development with three specialist tracks:
+                                </p>
+
+                                <p>
+                                    <ul>
+                                        <li>Software Development</li>
+                                        <li>User Experience (UX)</li>
+                                        <li>Immersive Simulation</li>
+                                    </ul>
+                                </p>
+
+                                <p>
+                                    Net JAE (ELR2B2): 4 to 14
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-primary">
+            <div class="footer container w-75 p-3">
+              <div class="row justify-content-center">
+                <div
+                  class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center"
+                >
+                  <h3 class="text-center text-white">2201001</h3>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center"
+                >
+                  <h3 class="text-center text-white">DIT/FT/1A/01</h3>
+                </div>
+                <div
+                  class="col-sm-12 col-md-4 d-flex align-items-center mx-auto justify-content-center"
+                >
+                  <div class="col p-1 text-center">
+                    <a href="https://www.facebook.com/" target="_blank" class=""
+                      ><img src="../graphics/logos/facebook.png" class="w-25"
+                    /></a>
+                  </div>
+      
+                  <div class="col p-1 text-center">
+                    <a href="https://www.instagram.com/" target="_blank" class=""
+                      ><img src="../graphics/logos/instagram.png" class="w-25"
+                    /></a>
+                  </div>
+      
+                  <div class="col p-1 text-center">
+                    <a
+                      href="https://mail.google.com/mail/u/0/?ogbl#inbox"
+                      target="_blank"
+                      class=""
+                      ><img src="../graphics/logos/gmail.png" class="w-25"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </body>
+</html>

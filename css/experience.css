@@ -1,0 +1,38 @@
+hr {
+    height: 3px !important; 
+    background-color: rgba(50, 149, 255, 0.75) !important;
+    opacity: 1;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.title {
+    text-shadow: 0px 5px 5px gray;
+}
+
+#calculatorOutput {
+    height: 50px;
+}
+
+body > div > div.row.mt-5 > div:nth-child(2) > div:nth-child(1) > div > div.card-header {
+    background-color: rgba(0, 175, 0, 0.5);
+}
+
+body > div > div.row.mt-5 > div:nth-child(2) > div:nth-child(2) > div > div.card-header {
+    background-color: rgba(156, 50, 255, 0.5);
+}
+
+body > div > div.row.mt-5 > div:nth-child(2) > div:nth-child(3) > div > div.card-header {
+    background-color: rgba(255, 250, 0, 0.5);
+}
+
+body > div > div.row.mt-5 > div:nth-child(2) > div:nth-child(4) > div > div.card-header {
+    background-color: rgba(0, 153, 255, 0.5);
+}

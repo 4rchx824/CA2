@@ -2,7 +2,7 @@
     top: none;
 }
 
-.intro > h1 {
+.intro > h2 {
     text-shadow: 0px 5px 5px gray;
 }
 
@@ -12,30 +12,10 @@ hr {
     opacity: 1;
 }
 
-.navbar-brand > img {
-    height: 25px;
-}
-
-.navbar-brand > h1 {
-    color: white;
-    font-size: 1.2em;
-}
-
-#navbarNavDropdown > ul > li > a {
-    color: black;
-    transition: color 0.5s;
-    font-size: large;
-}
-
-#navbarNavDropdown > ul > li > a:hover {
-    color: white;
-    transition: color 0.25s;
-}
-
 img {
     height: 100%;
     width: 100%;
-    /* border-radius: 15%; */
+    border-radius: 5%;
 }
 
 /* img:hover {
@@ -137,48 +117,48 @@ body > div > div.row.justify-content-center > div.personality.row.justify-conten
 
 /* Personality Coloring */
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(1) > div > div.card-header {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(1) > div > div.card-header {
     background-color: #4298b4;
 }
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(2) > div > div.card-header {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(2) > div > div.card-header {
     background-color: #e4ae3a;
 }
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(3) > div > div.card-header {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(3) > div > div.card-header {
     background-color: #33a474;
 }
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(4) > div > div.card-header {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(4) > div > div.card-header {
     background-color: #88619a;
 }
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(5) > div > div.card-header {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(5) > div > div.card-header {
     background-color: #f25e62;
 }
 
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(1) > div > div.card-body > div > div {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(1) > div > div.card-body > div > div {
     width: 62%;
     background-color: #4298b4;
 }
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(2) > div > div.card-body > div > div {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(2) > div > div.card-body > div > div {
     width: 64%;
     background-color: #e4ae3a;
 }
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(3) > div > div.card-body > div > div {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(3) > div > div.card-body > div > div {
     width: 53%;
     background-color: #33a474;
 }
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(4) > div > div.card-body > div > div {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(4) > div > div.card-body > div > div {
     width: 51%;
     background-color: #88619a;
 }
 
-body > div > div:nth-child(5) > div.personality.row > div.personalityTypes.row.mt-3 > div:nth-child(5) > div > div.card-body > div > div {
+body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > div:nth-child(5) > div > div.card-body > div > div {
     width: 57%;
     background-color: #f25e62;
 }
@@ -260,19 +240,6 @@ div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table >
 
 
 
-/* Scroll Bar Customisation */
-
-::-webkit-scrollbar {
-    width: 5px;
-} 
-
-::-webkit-scrollbar-track {
-    background: lightgray;
-}
-
-::-webkit-scrollbar-thumb {
-    background: gray;
-}
 
 
 
