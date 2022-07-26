@@ -3,6 +3,10 @@
   <head>
     <title>Homepage</title>
 
+    <!--Icon for Website Title-->
+    <!-- Image Credit: https://www.sp.edu.sg/docs/default-source/soc/fo-2022-programme---soc-rel1.pdf?sfvrsn=131e35b3_6 -->
+    <link rel="shortcut icon" href="/graphics/logos/dit.png" />
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -27,11 +31,14 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- <script src="./js/responsiveJS.js" async></script> -->
+
     <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/defaultStyles.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-      <div class="container-fluid">
+      <div class="container-fluid w-75">
         <a class="navbar-brand" href="#">
           <h1>YAN HEIN LATT</h1>
         </a>
@@ -49,87 +56,920 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="./index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Experience</a>
+              <a class="nav-link" href="./html/experience.html">Experience</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Careers</a>
+              <a class="nav-link" href="./html/careers.html">Careers</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Feedback</a>
+              <a class="nav-link" href="./html/feedback.html">Feedback</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="d-flex justify-content-center">
-      <div class="container-fluid w-75">
-        <div class="intro row">
-          <h1>Introduction</h1>
+    <!-- <div class=""> -->
+    <div class="body container-fluid w-75" id="body">
+      <div class="intro row mt-2 mb-1 text-shadow">
+        <h2>Introduction</h2>
+      </div>
+
+      <div class="row">
+        <hr />
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-justify">
+            Hello! My name is <em>Yan Hein Latt</em>, but you can call me
+            <em>Archie</em>. I'm from the country of Myanmar! Where I have
+            resided for most of my life until May 12th last year. <br /><br />
+
+            I am currently a Year 1 student at Singapore Polytechnic studying
+            under the three-year
+            <em>DIT (Diploma in Information Technology)</em> Course, prior to
+            studying in SP, I was studying in MDIS for almost a year and for my
+            IGCSEs which is essentially the international version of the local
+            GCE 'O' Level program. I've had interests in IT since young, this
+            was due to my constant interaction with websites, apps, video games
+            and more. Hence, during my IGCSEs I specifically chose subjects
+            related to the field of IT to improve my chances to get into
+            Singapore Polytechnic. <br /><br />
+
+            Upon graduation in 2025 from Singapore Polytechnic, given a good
+            GPA; I intend to apply for NUS Computer Science, if not, I'll have
+            no choice but to apply to an overseas university. <br /><br />
+
+            I have had prior experiences in IT, during my IGCSEs, I had chosen
+            to do
+            <a
+              href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-information-and-communication-technology-0417/"
+              target="_blank"
+              >ICT</a
+            >
+            and
+            <a
+              href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-computer-science-0478/"
+              target="_blank"
+              >Computer Science</a
+            >. In ICT, basic website building skills were taught e.g., using
+            HTML tables to build websites and basic CSS for looks. While, in
+            Computer Science, we were taught to program in Python, which we then
+            had to use to write a program for our IGCSE exam (can be found on my
+            <a href="https://replit.com/@4rchx824" target="_blank">repl.it</a>).
+            <br /><br />Furthermore, during my time in MDIS, I had to learn more
+            HTML and CSS. I also had to learn C++ and web application
+            development using ASP .NET, C# and some SQL. Some other IT related
+            modules I managed to touch up on include: Database Systems, Computer
+            Security, Network Technology, System Analysis and Design, Operating
+            Systems and VMware.<br /><br />
+
+            During my free time, I like to take pictures of scenaries and play
+            video games, such as Valorant and more!<br /><br />
+          </p>
         </div>
-  
-        <div class="row">
-          <div class="col-md-6">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora dolore, consectetur quis odio accusamus accusantium quaerat minima? Ipsa, exercitationem voluptatum, vitae voluptas consequuntur, eveniet voluptatibus nam enim maxime sed modi?
+
+        <div class="col-md-6">
+          <div class="introImg row p-1">
+            <div class="col-lg-6 col-md-12 p-1">
+              <a href="./graphics/index/scene1.jpg" target="_blank"
+                ><img src="./graphics/index/scene1.jpg" class=""
+              /></a>
+            </div>
+            <div class="col-lg-6 col-md-12 p-1">
+              <a href="./graphics/index/scene2.jpg" target="_blank"
+                ><img src="./graphics/index/scene2.jpg" class=""
+              /></a>
+            </div>
+            <div class="col-lg-6 col-md-12 p-1">
+              <a href="./graphics/index/scene3.jpg" target="_blank"
+                ><img src="./graphics/index/scene3.jpg" class=""
+              /></a>
+            </div>
+            <div class="col-lg-6 col-md-12 p-1">
+              <a href="./graphics/index/scene4.jpg" target="_blank"
+                ><img src="./graphics/index/scene4.jpg" class=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="valuesEducation row mx-auto">
+          <div class="col-md-3">
+            <div class="title row text-center">
+              <!-- Personal Values Test Results: https://personalvalu.es/results/7f6fa87a-dbd8-495d-b963-13bb3643ed87 -->
+              <!-- Quotes from: https://www.brainyquote.com/ -->
+              <h2>Values</h2>
+              <hr />
+            </div>
+            <div class="row">
+              <div class="col">
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="true"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner shadow-lg">
+                    <div class="carousel-item active">
+                      <div class="card">
+                        <div class="card-header bg-primary text-center">
+                          <h5 class="text-white">1. Ethics</h5>
+                        </div>
+                        <div class="card-body ms-4 me-4 mb-4">
+                          <p class="text-justify">
+                            I believe Ethics are important in life, I believe
+                            that being ethical allows me to oppose unethical
+                            actions and to be able to assess a situation well
+                            through a broader perspective and not my own. Hence,
+                            this allows me to be consistent in my beliefs and
+                            will defend them for the general good.
+                          </p>
+
+                          <blockquote>
+                            <q class="font-italic">
+                              Ethics is knowing the difference between what you
+                              have a right to do and what is right to do.
+                            </q>
+                            <br /><br />
+                            <cite>- Potter Stewart</cite>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item mb-2">
+                      <div class="card">
+                        <div class="card-header bg-primary text-center">
+                          <div class="text-white">
+                            <h5>2. Friendship</h5>
+                          </div>
+                        </div>
+                        <div class="card-body ms-4 me-4 mb-4">
+                          <p class="text-justify">
+                            Friendships are important to me because it allows me
+                            to enjoy life in the company of likeminded people.
+                            It gives a sense of self-worth, acceptance and
+                            belonging. Friendships teach us to take care of the
+                            other person and share what we have to offer.
+                          </p>
+
+                          <blockquote>
+                            <q class="font-italic">
+                              There is nothing on this earth more to be prized
+                              than true friendship.
+                            </q>
+
+                            <br /><br />
+
+                            <cite>- Thomas Aquinas</cite>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item mb-2">
+                      <div class="card">
+                        <div class="card-header bg-primary text-center">
+                          <div class="text-white">
+                            <h5>3. Financial Stability</h5>
+                          </div>
+                        </div>
+                        <div class="card-body ms-4 me-4 mb-4">
+                          <p class="text-justify">
+                            Although money is important, it is also not the most
+                            important to me, which is why I have it as my last
+                            value. Money is merely a medium of exchange which is
+                            important nowadays in order to achieve own needs and
+                            dreams, however it is still not as important as
+                            friends and ethics. Money can't buy happiness and
+                            real friends.
+                          </p>
+
+                          <blockquote>
+                            <q class="font-italic">
+                              You must gain control over your money or the lack
+                              of it will forever control you.
+                            </q>
+                            <br /><br />
+                            <cite>- Dave Ramsey</cite>
+                          </blockquote>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="col">
-            <div class="row p-1">
-              <div class="col-md-6 p-1"><img src="./graphics/index/scene1.jpg" /></div>
-              <div class="col-md-6 p-1"><img src="./graphics/index/scene2.jpg" /></div>
+          <div class="col-md-3">
+            <div class="title row text-center">
+              <h2>Education</h2>
+              <hr />
             </div>
-            <div class="row p-1">
-              <div class="col-md-6 p-1"><img src="./graphics/index/scene3.jpg" /></div>
-              <div class="col-md-6 p-1"><img src="./graphics/index/scene4.jpg" /></div>
-            </div>
-          </div>
-          </div>
-  
-          <!-- <div class="col-sm-12 order-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-            vitae accumsan nisl, et tristique velit. Vivamus et fringilla odio,
-            sit amet iaculis arcu. Phasellus interdum condimentum auctor.
-            Phasellus porttitor in purus eget pharetra. Sed elit ante, dapibus vel
-            lobortis ac, tincidunt ut eros. Suspendisse suscipit malesuada
-            viverra. Donec non venenatis orci, non faucibus mi. Donec pretium
-            rutrum justo vel placerat. Nunc molestie nulla id eros placerat, at
-            iaculis nulla aliquam. Praesent nisi orci, ornare in maximus a, tempus
-            vel purus. Integer vitae massa vitae arcu lobortis tincidunt.
-            Vestibulum diam ipsum, euismod eu dui ut, tincidunt placerat sem.
-            Nulla feugiat rutrum dui. Orci varius natoque penatibus et magnis dis
-            parturient montes, nascetur ridiculus mus. Nam scelerisque tellus quis
-            tortor luctus finibus. Sed sit amet finibus purus. Vestibulum
-            venenatis vel nisi ac hendrerit. Fusce risus enim, mollis vel lectus
-            id, vulputate consectetur odio. Quisque auctor, turpis nec accumsan
-            suscipit, sapien orci euismod tortor, quis tincidunt neque tellus
-            sollicitudin nunc. Duis vulputate tincidunt tortor.
-          </div>
-  
-          <div class="col order-2">
             <div class="row">
-              <div class="col-sm-6">
-                <img src="./graphics/index/scene1.jpg" />
-              </div>
-              <div class="col-sm-6">
-                <img src="./graphics/index/scene2.jpg" />
+              <div class="col">
+                <div
+                  class="accordion shadow"
+                  id="accordionPanelsStayOpenExample"
+                >
+                  <div class="accordion-item shadow">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button
+                        class="accordion-button collapsed bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseOne"
+                      >
+                        <h5>Primary School</h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingOne"
+                    >
+                      <div class="accordion-body">
+                        <ul class="list-unstyled">
+                          <li>
+                            <a
+                              href="https://www.networkinternationalschool.com/"
+                              target="_blank"
+                              >Network International School</a
+                            >
+                            (Year 1 - Year 6)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item shadow">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button
+                        class="accordion-button collapsed bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo"
+                      >
+                        <h5>Secondary School</h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingTwo"
+                    >
+                      <div class="accordion-body">
+                        <ul class="list-unstyled">
+                          <li>
+                            <a
+                              href="https://www.networkinternationalschool.com/"
+                              target="_blank"
+                              >Network International School</a
+                            >
+                            (Year 7 - Year 9)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item shadow">
+                    <h2
+                      class="accordion-header"
+                      id="panelsStayOpen-headingThree"
+                    >
+                      <button
+                        class="accordion-button collapsed bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree"
+                      >
+                        <h5>IGCSE (GCE 'O' Level)</h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseThree"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingThree"
+                    >
+                      <div class="accordion-body">
+                        <ul class="list-unstyled">
+                          <li>
+                            <a
+                              href="https://www.networkinternationalschool.com/"
+                              target="_blank"
+                              >Network International School</a
+                            >
+                            (Year 10 - Year 11)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item shadow">
+                    <h2
+                      class="accordion-header"
+                      id="panelsStayOpen-headingFour"
+                    >
+                      <button
+                        class="accordion-button collapsed bg-light"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour"
+                      >
+                        <h5>Post-Secondary Education</h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseFour"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="panelsStayOpen-headingFour"
+                    >
+                      <div class="accordion-body">
+                        <h5>MDIS</h5>
+                        <ul class="list-unstyled">
+                          <li class="p-1">
+                            <a
+                              href="https://www.mdis.edu.sg/-international-foundation-diploma-in-stema-technology"
+                              target="_blank"
+                              >Foundatiom Diploma in Science, Technology,
+                              Engingeering, Mathematics and Arts </a
+                            >(April 2021 - October 2021)
+                          </li>
+                          <li class="p-1">
+                            <a
+                              href="https://www.mdis.edu.sg/-higher-diploma-in-information-technology"
+                              target="_blank"
+                              >Higher Diploma in Information Technology</a
+                            >
+                            (October 2021 - February 2022)
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item shadow">
+                    <h2
+                      class="accordion-header"
+                      id="panelsStayOpen-headingFive"
+                    >
+                      <button
+                        class="accordion-button collapsed bg-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive"
+                        aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseFive"
+                      >
+                        <h5 class="text-white">Current Education</h5>
+                      </button>
+                    </h2>
+                    <div
+                      id="panelsStayOpen-collapseFive"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="panelsStayOpen-headingFive"
+                    >
+                      <div class="accordion-body">
+                        <h5>Singapore Polytechnic</h5>
+                        <ul class="list-unstyled">
+                          <li>
+                            <a
+                              href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology/overview"
+                              target="_blank"
+                              >Diploma in Information Technology</a
+                            >
+                            <p
+                              class="text-white bg-secondary rounded text-center mt-1"
+                            >
+                              (CURRENT)
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="row-sm-12">
-              <div class="col-md-6">
-                <img src="./graphics/index/scene3.jpg" />
+          </div>
+
+          <div class="col-md-6">
+            <div class="title row text-center">
+              <h2>Certificates</h2>
+              <hr />
+            </div>
+            <div class="row">
+              <div class="row mx-auto">
+                <a
+                  href="./graphics/index/cert1full.PNG"
+                  target="_blank"
+                  class="mb-1"
+                >
+                  <img
+                    src="./graphics/index/cert1.png"
+                    class="border rounded"
+                  />
+                </a>
               </div>
-              <div class="col-md-6">
-                <img src="./graphics/index/scene4.jpg" />
+
+              <div class="row mx-auto">
+                <a
+                  href="./graphics/index/cert2full.PNG"
+                  target="_blank"
+                  class="mt-1"
+                >
+                  <img
+                    src="./graphics/index/cert2.png"
+                    class="border rounded"
+                  />
+                </a>
               </div>
-            </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="personalityRow row justify-content-center">
+        <div class="title row text-center mt-2 mx-auto">
+          <h2>Personality</h2>
+          <hr />
+        </div>
+        <div class="personality row justify-content-center" id="cards">
+          <div class="typesCard row mx-auto justify-content-center">
+            <div class="col-sm-12 col-md-4 text-center">
+              <div class="card mt-2 shadow-lg">
+                <div class="card-header">
+                  <h5 class="text-white">MBTI</h5>
+                </div>
+
+                <div class="card-body">
+                  <h6 class="text-warning">Turbulent Defender (ISFJ-T)</h6>
+
+                  <p>
+                    Turbulent Defenders are Introverted, Observant, Feeling,
+                    Judging and Turbulent. These warm and unassuming types are
+                    efficient and responsible, always opting for practicality in
+                    life.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 text-center">
+              <div class="card mt-2 shadow-lg">
+                <div class="card-header">
+                  <h5 class="text-white">Role</h5>
+                </div>
+
+                <div class="card-body">
+                  <h6 class="text-danger">Sentinel</h6>
+
+                  <p>
+                    Sentinels are cooperative and practical, embracing and
+                    creating order, security, and stability. They're
+                    hard-working, meticulous, and traditional, preferring to
+                    stick to their plans
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4 text-center">
+              <div class="card mt-2 shadow-lg">
+                <div class="card-header">
+                  <h5 class="text-center text-white">Strategy</h5>
+                </div>
+
+                <div class="card-body">
+                  <h6 class="text-success">Constant Improvement</h6>
+
+                  <p>
+                    Constant Improvers are quiet, individualistic,
+                    perfectionistic, and success-driven people, often spending a
+                    lot of time and effort ensuring the result of their work is
+                    the best it can be.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="typesCard row mt-3 justify-content-center">
+            <div class="col-md-4">
+              <div class="card mt-2 shadow">
+                <div class="card-header">
+                  <h5 class="text-center text-white">Mind</h5>
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center">
+                    You're mostly Introverted. You likely prefer fewer, yet deep
+                    and meaningful, social interactions and feel drawn to calmer
+                    environments.
+                  </p>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <h6 class="text-center mt-1">
+                    Introverted <br />
+                    62%
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mt-2 shadow">
+                <div class="card-header">
+                  <h5 class="text-center text-white">Energy</h5>
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center">
+                    You're mostly Observant. You're likely pragmatic and
+                    down-to-earth, with a strong focus on what is happening or
+                    very likely to happen.
+                  </p>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <h6 class="text-center mt-1">
+                    Observant <br />
+                    64%
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mt-2 shadow">
+                <div class="card-header">
+                  <h5 class="text-center text-white">Nature</h5>
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center">
+                    You're mostly Feeling. You likely value emotional expression
+                    and sensitivity, prioritizing empathy, social harmony, and
+                    cooperation.
+                  </p>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <h6 class="text-center mt-1">
+                    Feeling <br />
+                    53%
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mt-2 shadow">
+                <div class="card-header">
+                  <h5 class="text-center text-white">Tactics</h5>
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center">
+                    You're mostly Judging. You're likely decisive, thorough, and
+                    highly organized. You value clarity and prefer planning to
+                    spontaneity.
+                  </p>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <h6 class="text-center mt-1">
+                    Judging <br />
+                    51%
+                  </h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mt-2 shadow">
+                <div class="card-header">
+                  <h5 class="text-center text-white">Identity</h5>
+                </div>
+
+                <div class="card-body">
+                  <p class="text-center">
+                    You're mostly Turbulent. You're likely self-conscious,
+                    sensitive to stress, success-driven, perfectionistic, and
+                    eager to improve.
+                  </p>
+                  <div class="progress">
+                    <div
+                      class="progress-bar"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <h6 class="text-center mt-1">
+                    Turbulent <br />
+                    57%
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timetable row mb-5 justify-content-center">
+        <div class="title row">
+          <h2 class="text-center mt-5">My Timetable</h2>
+          <hr />
+        </div>
+        <div class="col-md-6 p-3">
+          <div class="card mx-auto shadow-lg">
+            <div class="card-header bg-primary">
+              <h3 class="text-center text-white">DIT/FT/1A/01</h3>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled">
+                <li class="p-1 rounded CAT mb-2">
+                  CAT - Critical Analytical and Thinking
+                </li>
+                <li class="p-1 rounded CPR mb-2">
+                  CPR - Communicating for Project Effectiveness (Proposal)
+                </li>
+                <li class="p-1 rounded ECG mb-2">
+                  ECG - Education and Career Guidance
+                </li>
+                <li class="p-1 rounded FED mb-2">
+                  FED - Front-End Web Development
+                </li>
+                <li class="p-1 rounded FOC mb-2">
+                  FOC - Fundamentals of Computing
+                </li>
+                <li class="p-1 rounded FOP mb-2">
+                  FOP - Fundamentals of Programming
+                </li>
+                <li class="p-1 rounded MATH mb-2">MATH - Mathematics</li>
+                <li class="p-1 rounded SFL mb-2">SFL - Sports for Life</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 p-3">
+          <div class="table-responsive w-100 shadow-lg">
+            <table class="table-bordered w-100 mx-auto">
+              <thead>
+                <th>&nbsp;</th>
+                <th colspan="2" class="text-center">8:00 - 9:00</th>
+                <th colspan="2" class="text-center">9:00 - 10:00</th>
+                <th colspan="2" class="text-center">10:00 - 11:00</th>
+                <th colspan="2" class="text-center">11:00 - 12:00</th>
+                <th colspan="2" class="text-center">12:00 - 13:00</th>
+                <th colspan="2" class="text-center">13:00 - 14:00</th>
+                <th colspan="2" class="text-center">14:00 - 15:00</th>
+                <th colspan="2" class="text-center">15:00 - 16:00</th>
+                <th colspan="2" class="text-center">16:00 - 17:00</th>
+                <th colspan="2" class="text-center">17:00 - 18:00</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="text-center p-3">Monday</th>
+                  <td colspan="14"></td>
+                  <td></td>
+                  <td colspan="5" class="FED text-center p-1">
+                    ST0501<br />FED<br />Tutorial<br />DIT/FT/1A<br />01<br />T2257<br />Wong
+                    Shaohao Vincent
+                  </td>
+                </tr>
+
+                <tr>
+                  <th class="text-center p-3">Tuesday</th>
+                  <td colspan="10"></td>
+                  <td colspan="4" class="ECG text-center p-1">
+                    SP108B<br />ECG 1<br />Tutorial<br />DIT/FT/1A<br />01<br />T2256<br />Kenneth
+                    Tan
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="4" class="SFL text-center p-1">
+                    PE125L<br />YR1 BADMINTON<br />Miscellaneous<br />SL/PE125L/FT<br />02<br />SPArenaLv3<br />Quek
+                    Kin Chuang
+                  </td>
+                </tr>
+
+                <tr>
+                  <th class="text-center p-3">Wednesday</th>
+                  <td colspan="2"></td>
+                  <td></td>
+                  <td colspan="3" class="MATH text-center p-1">
+                    MS0105<br />MATH<br />Tutorial<br />DIT/FT/1A<br />01<br />T2257<br />Toh
+                    Eng Kiat
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="6" class="FOP text-center p-1">
+                    ST0502<br />FOP<br />Practical<br />DIT/FT/1A<br />01<br />T2257<br />Kenneth
+                    Tan
+                  </td>
+                  <td colspan="6"></td>
+                </tr>
+
+                <tr>
+                  <th class="text-center p-3">Thursday</th>
+                  <td colspan="5" class="FED text-center p-1">
+                    ST0501<br />FED<br />Practical<br />DIT/FT/1A<br />01<br />T2257<br />Wong
+                    Shaohao Vincent
+                  </td>
+                  <td colspan="5"></td>
+                  <td colspan="4" class="FOC text-center p-1">
+                    ST2413<br />FOC<br />Tutorial<br />DIT/FT/1A<br />01<br />T2257<br />Casey
+                    How
+                  </td>
+                  <td colspan="6" class="FOP text-center p-1">
+                    ST0502<br />FOP<br />Practical<br />DIT/FT/1A<br />01<br />T2257<br />Kenneth
+                    Tan
+                  </td>
+                </tr>
+
+                <tr>
+                  <th class="text-center p-3">Friday</th>
+                  <td colspan="4" class="FOC text-center p-1">
+                    ST2413<br />FOC<br />Practical<br />DIT/FT/1A<br />01<br />T2257<br />Casey
+                    How
+                  </td>
+                  <td colspan="4" class="CAT text-center p-1">
+                    LC0860<br />CAT<br />Tutorial<br />DIT/FT/1A<br />01<br />T2257<br />Melissa
+                    Ong
+                  </td>
+                  <td colspan="2"></td>
+                  <td colspan="3" class="MATH text-center p-1">
+                    MS0105<br />MATH<br />Tutorial<br />DIT/FT/1A<br />01<br />T2251<br />Toh
+                    Eng Kiat
+                  </td>
+                  <td colspan="4" class="CPR text-center p-1">
+                    LC0855<br />CPR<br />Tutorial<br />DIT/FT/1A<br />01<br />T2251<br />Tan
+                    Jui Liang Kenneth
+                  </td>
+                  <td colspan="3"></td>
+                </tr>
+
+                <tr class="bottomrow">
+                  <th>&nbsp;</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="container-fluid bg-primary">
+      <div class="footer container w-75 p-3">
+        <div class="row justify-content-center">
+          <div
+            class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center"
+          >
+            <h3 class="text-center text-white">2201001</h3>
+          </div>
+          <div
+            class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center"
+          >
+            <h3 class="text-center text-white">DIT/FT/1A/01</h3>
+          </div>
+          <div
+            class="col-sm-12 col-md-4 d-flex align-items-center mx-auto justify-content-center"
+          >
+            <div class="col p-1 text-center">
+              <a href="https://www.facebook.com/" target="_blank" class=""
+                ><img src="./graphics/logos/facebook.png" class="w-25"
+              /></a>
+            </div>
+
+            <div class="col p-1 text-center">
+              <a href="https://www.instagram.com/" target="_blank" class=""
+                ><img src="./graphics/logos/instagram.png" class="w-25"
+              /></a>
+            </div>
+
+            <div class="col p-1 text-center">
+              <a
+                href="https://mail.google.com/mail/u/0/?ogbl#inbox"
+                target="_blank"
+                class=""
+                ><img src="./graphics/logos/gmail.png" class="w-25"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- </div> -->
   </body>
 </html>
