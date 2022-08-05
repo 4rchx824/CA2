@@ -33,14 +33,26 @@
 
     <!-- <script src="./js/responsiveJS.js" async></script> -->
 
+    <script src="./js/stickyNavbar.js" async></script>
+
+    <script src="/js/tooltip.js" async></script>
+
+    <!-- Script for back to top button -->
+    <script src="/js/backToTop.js" async></script>
+    <script src="/js/modal.js" async></script>
+
+    <script src="./js/randomiser.js" async></script>
+
+    <script src="/js/currentLesson.js" async></script>
+
     <link href="./css/index.css" rel="stylesheet" />
     <link href="./css/defaultStyles.css" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary" id="navbar">
       <div class="container-fluid w-75">
-        <a class="navbar-brand" href="#">
-          <h1>YAN HEIN LATT</h1>
+        <a class="navbar-brand" href="./index.html">
+          <h1 class="fw-light fs-3">YAN HEIN LATT</h1>
         </a>
         <button
           class="navbar-toggler"
@@ -55,16 +67,78 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
-                class="nav-link active text-white"
-                aria-current="page"
-                href="./index.html"
-                >Home</a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Home
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./index.html">Introduction</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#values">Values</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#education"
+                    >Education</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#cert"
+                    >Certificates</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#personality"
+                    >Personality</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./index.html#timetable"
+                    >Timetable</a
+                  >
+                </li>
+              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./html/experience.html">Experience</a>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Experience
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./html/experience.html"
+                    >Current Experience</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./html/experience.html#calc"
+                    >Calculator</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./html/experience.html#coursesOffered"
+                    >Courses Offered in SOC</a
+                  >
+                </li>
+              </ul>
             </li>
 
             <li class="nav-item">
@@ -81,7 +155,7 @@
 
     <!-- <div class=""> -->
     <div class="body container-fluid w-75" id="body">
-      <div class="intro row mt-2 mb-1 text-shadow">
+      <div class="intro row mt-3 mb-1 text-shadow" id="intro">
         <h2>Introduction</h2>
       </div>
 
@@ -143,24 +217,91 @@
         <div class="col-md-6">
           <div class="introImg row p-1">
             <div class="col-lg-6 col-md-12 p-1">
-              <a href="./graphics/index/scene1.jpg" target="_blank"
-                ><img src="./graphics/index/scene1.jpg" class=""
-              /></a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#img1">
+                <img src="./graphics/index/scene1.jpg" class=""
+              />
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="img1" tabindex="-1" aria-labelledby="img1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content border-0">
+                    <div class="modal-body p-0 border-0">
+                      <img src="./graphics/index/scene1.jpg" class="rounded-0 border-0"/>
+                      <h5 class="text-center onimage">
+                        Inya Lake, Yangon
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-lg-6 col-md-12 p-1">
-              <a href="./graphics/index/scene2.jpg" target="_blank"
-                ><img src="./graphics/index/scene2.jpg" class=""
-              /></a>
+              
+              <!-- Button trigger modal -->
+              <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#img2">
+                <img src="./graphics/index/scene2.jpg" class=""
+              />
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="img2" tabindex="-1" aria-labelledby="img2" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content border-0">
+                    <div class="modal-body p-0 border-0">
+                      <img src="./graphics/index/scene2.jpg" class="rounded-0 border-0"/>
+                      <h5 class="text-center onimage">
+                        ION Orchard, Singapore
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-lg-6 col-md-12 p-1">
-              <a href="./graphics/index/scene3.jpg" target="_blank"
-                ><img src="./graphics/index/scene3.jpg" class=""
-              /></a>
+              
+              <!-- Button trigger modal -->
+              <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#img3">
+                <img src="./graphics/index/scene3.jpg" class=""
+              />
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="img3" tabindex="-1" aria-labelledby="img3" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content border-0">
+                    <div class="modal-body p-0 border-0">
+                      <img src="./graphics/index/scene3.jpg" class="rounded-0 border-0"/>
+                      <h5 class="text-center onimage">
+                        Pan Pacific, Yangon
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="col-lg-6 col-md-12 p-1">
-              <a href="./graphics/index/scene4.jpg" target="_blank"
-                ><img src="./graphics/index/scene4.jpg" class=""
-              /></a>
+              
+              <!-- Button trigger modal -->
+              <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#img4">
+                <img src="./graphics/index/scene4.jpg" class=""
+              />
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="img4" tabindex="-1" aria-labelledby="img4" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content border-0">
+                    <div class="modal-body p-0 border-0">
+                      <img src="./graphics/index/scene4.jpg" class="rounded-0 border-0"/>
+                      <h5 class="text-center onimage">
+                        Changi Jewel, Singapore
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -169,7 +310,7 @@
       <div class="row">
         <div class="valuesEducation row mx-auto">
           <div class="col-md-3">
-            <div class="title row text-center">
+            <div class="title row text-center" id="values">
               <!-- Personal Values Test Results: https://personalvalu.es/results/7f6fa87a-dbd8-495d-b963-13bb3643ed87 -->
               <!-- Quotes from: https://www.brainyquote.com/ -->
               <h2>Values</h2>
@@ -320,7 +461,7 @@
           </div>
 
           <div class="col-md-3">
-            <div class="title row text-center">
+            <div class="title row text-center" id="education">
               <h2>Education</h2>
               <hr />
             </div>
@@ -522,36 +663,52 @@
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="title row text-center">
+          <div class="cert col-md-6">
+            <div class="title row text-center" id="cert">
               <h2>Certificates</h2>
               <hr />
             </div>
             <div class="row">
-              <div class="row mx-auto">
-                <a
-                  href="./graphics/index/cert1full.PNG"
-                  target="_blank"
-                  class="mb-1"
-                >
-                  <img
-                    src="./graphics/index/cert1.png"
-                    class="border rounded"
-                  />
-                </a>
+              <div class="row mx-auto mb-3">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#cert1">
+                  <img src="./graphics/index/cert1.png" class=""
+                />
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="cert1" tabindex="-1" aria-labelledby="cert1" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content border-0">
+                      <div class="modal-body p-0 border-0">
+                        <a href="/graphics/index/cert1full.PNG" target="_blank">
+                          <img src="./graphics/index/cert1full.PNG" class="rounded-0 border-0"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div class="row mx-auto">
-                <a
-                  href="./graphics/index/cert2full.PNG"
-                  target="_blank"
-                  class="mt-1"
-                >
-                  <img
-                    src="./graphics/index/cert2.png"
-                    class="border rounded"
-                  />
-                </a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#cert2">
+                  <img src="./graphics/index/cert2.png" class=""
+                />
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="cert2" tabindex="-1" aria-labelledby="cert2" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content border-0">
+                      <div class="modal-body p-0 border-0">
+                        <a href="/graphics/index/cert2full.PNG" target="_blank">
+                          <img src="./graphics/index/cert2full.PNG" class="rounded-0 border-0"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -559,7 +716,7 @@
       </div>
 
       <div class="personalityRow row justify-content-center">
-        <div class="title row text-center mt-2 mx-auto">
+        <div class="title row text-center mt-2 mx-auto" id="personality">
           <h2>Personality</h2>
           <hr />
         </div>
@@ -769,15 +926,15 @@
 
       <div class="timetable row mb-5 justify-content-center">
         <div class="title row">
-          <h2 class="text-center mt-5">My Timetable</h2>
+          <h2 class="text-center mt-5" id="timetable">My Timetable</h2>
           <hr />
         </div>
-        <div class="col-md-6 p-3">
-          <div class="card mx-auto shadow-lg">
+        <div class="col-md-6 p-3 order-sm-1 order-md-2">
+          <div class="card mx-auto shadow-lg h-100">
             <div class="card-header bg-primary">
               <h3 class="text-center text-white">DIT/FT/1A/01</h3>
             </div>
-            <div class="card-body">
+            <div class="card-body d-flex align-items-center mx-auto">
               <ul class="list-unstyled">
                 <li class="p-1 rounded CAT mb-2">
                   CAT - Critical Analytical and Thinking
@@ -803,25 +960,54 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 p-3">
+        <div class="col-md-6 p-3 order-sm-2 order-md-1">
+          <div class="card shadow-lg h-100 my-auto">
+            <div class="card-header bg-primary">
+              <h3 class="text-center text-white">Current Time</h3>
+            </div>
+            <div class="card-body m-0 justify-content-center my-auto">
+              <div class="row h-100">
+                <div class="col my-auto">
+                  <h2 class="text-shadow text-center p-3 mx-auto" id="date">
+
+                  </h2>
+    
+                  <h3 class="text-center fw-light fst-italic p-3">
+                    I am currently in
+                  </h3>
+    
+                  <div class="card w-75 mx-auto shadow" id="cardBG">
+                    <div class="card-body" id="cardbody">
+                      <p class="text-center my-auto" id="currentClass">
+    
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 p-3 order-3">
           <div class="table-responsive w-100 shadow-lg">
             <table class="table-bordered w-100 mx-auto">
               <thead>
                 <th>&nbsp;</th>
-                <th colspan="2" class="text-center">8:00 - 9:00</th>
-                <th colspan="2" class="text-center">9:00 - 10:00</th>
-                <th colspan="2" class="text-center">10:00 - 11:00</th>
-                <th colspan="2" class="text-center">11:00 - 12:00</th>
-                <th colspan="2" class="text-center">12:00 - 13:00</th>
-                <th colspan="2" class="text-center">13:00 - 14:00</th>
-                <th colspan="2" class="text-center">14:00 - 15:00</th>
-                <th colspan="2" class="text-center">15:00 - 16:00</th>
-                <th colspan="2" class="text-center">16:00 - 17:00</th>
-                <th colspan="2" class="text-center">17:00 - 18:00</th>
+                <th colspan="2" class="text-center px-3">8:00 - 9:00</th>
+                <th colspan="2" class="text-center px-3">9:00 - 10:00</th>
+                <th colspan="2" class="text-center px-3">10:00 - 11:00</th>
+                <th colspan="2" class="text-center px-3">11:00 - 12:00</th>
+                <th colspan="2" class="text-center px-3">12:00 - 13:00</th>
+                <th colspan="2" class="text-center px-3">13:00 - 14:00</th>
+                <th colspan="2" class="text-center px-3">14:00 - 15:00</th>
+                <th colspan="2" class="text-center px-3">15:00 - 16:00</th>
+                <th colspan="2" class="text-center px-3">16:00 - 17:00</th>
+                <th colspan="2" class="text-center px-3">17:00 - 18:00</th>
               </thead>
               <tbody>
                 <tr>
-                  <th class="text-center p-3">Monday</th>
+                  <th class="days text-center p-3">Monday</th>
                   <td colspan="14"></td>
                   <td></td>
                   <td colspan="5" class="FED text-center p-1">
@@ -831,24 +1017,24 @@
                 </tr>
 
                 <tr>
-                  <th class="text-center p-3">Tuesday</th>
+                  <th class="days text-center p-3">Tuesday</th>
                   <td colspan="10"></td>
                   <td colspan="4" class="ECG text-center p-1">
                     SP108B<br />ECG 1<br />Tutorial<br />DIT/FT/1A<br />01<br />T2256<br />Kenneth
                     Tan
                   </td>
                   <td colspan="2"></td>
-                  <td colspan="4" class="SFL text-center p-1">
+                  <td colspan="4" class="SFL text-center p-1" id="sfl">
                     PE125L<br />YR1 BADMINTON<br />Miscellaneous<br />SL/PE125L/FT<br />02<br />SPArenaLv3<br />Quek
                     Kin Chuang
                   </td>
                 </tr>
 
                 <tr>
-                  <th class="text-center p-3">Wednesday</th>
+                  <th class="days text-center p-3">Wednesday</th>
                   <td colspan="2"></td>
                   <td></td>
-                  <td colspan="3" class="MATH text-center p-1">
+                  <td colspan="3" class="MATH text-center p-1" id="math">
                     MS0105<br />MATH<br />Tutorial<br />DIT/FT/1A<br />01<br />T2257<br />Toh
                     Eng Kiat
                   </td>
@@ -861,7 +1047,7 @@
                 </tr>
 
                 <tr>
-                  <th class="text-center p-3">Thursday</th>
+                  <th class="days text-center p-3">Thursday</th>
                   <td colspan="5" class="FED text-center p-1">
                     ST0501<br />FED<br />Practical<br />DIT/FT/1A<br />01<br />T2257<br />Wong
                     Shaohao Vincent
@@ -878,7 +1064,7 @@
                 </tr>
 
                 <tr>
-                  <th class="text-center p-3">Friday</th>
+                  <th class="days text-center p-3">Friday</th>
                   <td colspan="4" class="FOC text-center p-1">
                     ST2413<br />FOC<br />Practical<br />DIT/FT/1A<br />01<br />T2257<br />Casey
                     How
@@ -888,7 +1074,7 @@
                     Ong
                   </td>
                   <td colspan="2"></td>
-                  <td colspan="3" class="MATH text-center p-1">
+                  <td colspan="3" class="MATH text-center p-1" id="math">
                     MS0105<br />MATH<br />Tutorial<br />DIT/FT/1A<br />01<br />T2251<br />Toh
                     Eng Kiat
                   </td>
@@ -928,6 +1114,28 @@
         </div>
       </div>
     </div>
+
+    <button id="backToTopBtn">
+      <a href="#body"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-chevron-double-up"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+          />
+        </svg>
+      </a>
+    </button>
 
     <div class="container-fluid bg-primary">
       <div class="footer container w-75 p-3">

@@ -1,3 +1,7 @@
+#navbar {
+    z-index: 3;
+}
+
 .navbar-brand > img {
     height: 25px;
 }
@@ -30,4 +34,41 @@
 
 ::-webkit-scrollbar-thumb {
     background: gray;
+}
+
+/* Back to top button styling */
+#backToTopBtn > a {
+    text-decoration: none;
+    color: white;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+#backToTopBtn {
+    border-radius: 100%;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 15px; /* Place the button at the bottom of the page */
+    right: 15px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    background-color: blue;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px;
+}
+
+
+/* Sticky Navbar */
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  } 
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .body {
+    padding-top: 60px;
 }

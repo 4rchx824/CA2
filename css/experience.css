@@ -9,6 +9,45 @@ img {
     width: 100%;
 }
 
+/* #dit {
+    margin-top: 50px;
+    transition: margin-top 1s;
+}
+
+#dit:hover {
+    margin-top: 0px;
+}
+
+
+
+#dism {
+    margin-top: 50px;
+    transition: margin-top 1s;
+}
+
+#dism:hover {
+    margin-top: 0px;
+}
+
+
+#daaa {
+    margin-top: 50px;
+    transition: margin-top 1s;
+}
+
+#daaa:hover {
+    margin-top: 0px;
+}
+
+#dcitp {
+    margin-top: 50px;
+    transition: margin-top 1s;
+}
+
+#dcitp:hover {
+    margin-top: 0px;
+} */
+
 .text-right {
     text-align: right;
 }

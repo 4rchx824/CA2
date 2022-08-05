@@ -6,23 +6,52 @@
     text-shadow: 0px 5px 5px gray;
 }
 
+.text-shadow {
+    text-shadow: 0px 5px 5px gray;
+}
+
 hr {
     height: 3px !important; 
     background-color: rgba(50, 149, 255, 0.75) !important;
     opacity: 1;
 }
 
+.onimage {
+    bottom: 1%;
+    left: 10%;
+    right: 10%;
+    color: white;
+    position: absolute;
+    text-shadow: 0px 5px 10px black;
+}
+
 img {
     height: 100%;
     width: 100%;
+    box-shadow: none;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+#body > div:nth-child(3) > div:nth-child(2) > div > div > button > img {
     border-radius: 5%;
 }
 
-/* img:hover {
-    
-} */
 
-.body *> img:hover {
+#body > div:nth-child(3) > div:nth-child(2) > div > div > button > img:hover {
+    box-shadow: 0px 5px 10px gray;
+}
+
+
+#body > div:nth-child(3) > div > div > div > button {
+    box-shadow: none;
+}
+
+
+#body > div:nth-child(4) > div > div.cert.col-md-6 > div:nth-child(2) > div > button {
+    box-shadow: none;
+}
+
+#body > div:nth-child(4) > div > div.cert.col-md-6 > div:nth-child(2) > div > button > img:hover {
     box-shadow: 0px 5px 10px gray;
 }
 
@@ -75,7 +104,7 @@ body > div > div:nth-child(5) > div.personality.row > div:nth-child(1) > div:nth
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(230, 120, 255) 0%, rgba(35,76,255,1) 100%);
+    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(230, 120, 255) 0%, rgb(87, 118, 255) 100%);
     background-size: 400% 400%;
 }
 
@@ -177,7 +206,7 @@ body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > d
 
 /* Timetable coloring */
 div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table > thead > tr > th {
-    background-color: rgba(90, 201, 235, 0.15)
+    background-color: rgba(90, 201, 235, 0.2)
 }
 
 
@@ -187,21 +216,26 @@ div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table >
 
 
 
+
+
 .CPR {
     background-color: rgba(255, 240, 200, 0.75);
 }
 
 
 
+
 .ECG {
-    background-color: rgba(225, 200, 255, 0.5)
+    background-color: rgba(225, 200, 255, 0.5);
 }
+
 
 
 
 .FED {
-    background-color: rgba(255, 200, 200, 0.5)
+    background-color: rgba(255, 200, 200, 0.5);
 }
+
 
 
 
@@ -223,21 +257,19 @@ div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table >
 
 
 
+
 .SFL {
     background-color: rgba(135, 135, 255, 0.25);
 }
+
 
 .bottomrow {
     visibility: collapse;
 }
 
-
-/* Footer Customising */
-/* body > div.container-fluid.bg-primary > div > div > div.col-sm-4.d-flex.align-items-center > div > div > a > img {
-    width: 25%;
-    height: 25%;
-} */
-
+.days {
+    background-color: rgba(90, 201, 235, 0.1);
+}
 
 
 

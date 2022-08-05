@@ -12,9 +12,9 @@ function calculatorMode(calcType) {
   switch (calcType) {
     case 1:
       document.getElementById("calculatorMode").innerHTML = `
-        <div class="card w-75 mx-auto border border-success mb-3">
+        <div class="card w-75 mx-auto border border-success mb-2">
             <div class="card-body text-success p-0">
-                <h5 class="p-1 m-0" id="calculatorMode">
+                <h5 class="p-2 m-0" id="calculatorMode">
                     Calculator Mode: DEC --> BIN
                 </h5>
             </div>
@@ -24,9 +24,9 @@ function calculatorMode(calcType) {
 
     case 2:
       document.getElementById("calculatorMode").innerHTML = `
-        <div class="card w-75 mx-auto border border-success mb-3">
+        <div class="card w-75 mx-auto border border-success mb-2">
             <div class="card-body text-success p-0">
-                <h5 class="p-1 m-0" id="calculatorMode">
+                <h5 class="p-2 m-0" id="calculatorMode">
                     Calculator Mode: DEC --> HEX
                 </h5>
             </div>
@@ -36,9 +36,9 @@ function calculatorMode(calcType) {
 
     case 3:
       document.getElementById("calculatorMode").innerHTML = `
-        <div class="card w-75 mx-auto border border-danger mb-3">
+        <div class="card w-75 mx-auto border border-danger mb-2">
             <div class="card-body text-danger p-0">
-                <h5 class="p-1 m-0" id="calculatorMode">
+                <h5 class="p-2 m-0" id="calculatorMode">
                     Calculator Mode: BIN --> DEC
                 </h5>
             </div>
@@ -48,9 +48,9 @@ function calculatorMode(calcType) {
 
     case 4:
       document.getElementById("calculatorMode").innerHTML = `
-        <div class="card w-75 mx-auto border border-danger mb-3">
+        <div class="card w-75 mx-auto border border-danger mb-2">
             <div class="card-body text-danger p-0">
-                <h5 class="p-1 m-0" id="calculatorMode">
+                <h5 class="p-2 m-0" id="calculatorMode">
                     Calculator Mode: BIN --> HEX
                 </h5>
             </div>
@@ -60,9 +60,9 @@ function calculatorMode(calcType) {
 
     case 5:
       document.getElementById("calculatorMode").innerHTML = `
-        <div class="card w-75 mx-auto border border-warning mb-3">
+        <div class="card w-75 mx-auto border border-warning mb-2">
             <div class="card-body text-warning p-0">
-                <h5 class="p-1 m-0" id="calculatorMode">
+                <h5 class="p-2 m-0" id="calculatorMode">
                     Calculator Mode: HEX --> DEC
                 </h5>
             </div>
@@ -72,9 +72,9 @@ function calculatorMode(calcType) {
 
     case 6:
       document.getElementById("calculatorMode").innerHTML = `
-        <div class="card w-75 mx-auto border border-warning mb-3">
+        <div class="card w-75 mx-auto border border-warning mb-2">
             <div class="card-body text-warning p-0">
-                <h5 class="p-1 m-0" id="calculatorMode">
+                <h5 class="p-2 m-0" id="calculatorMode">
                     Calculator Mode: HEX --> BIN
                 </h5>
             </div>
@@ -96,15 +96,15 @@ function decInput() {
                 <div class="col text-center">
                     <ul class="list-unstyled" id="calculatorBtns">
                         <li class="mb-1">
-                            <button type="button" class="btn btn-danger btn-lg w-25" disabled>A</button>
-                            <button type="button" class="btn btn-danger btn-lg w-25" disabled>B</button>
-                            <button type="button" class="btn btn-danger btn-lg w-25" disabled>C</button>
+                            <button type="button" class="btn btn-success btn-lg w-25" disabled>A</button>
+                            <button type="button" class="btn btn-success btn-lg w-25" disabled>B</button>
+                            <button type="button" class="btn btn-success btn-lg w-25" disabled>C</button>
                         </li>
 
                         <li class="mb-1">
-                            <button type="button" class="btn btn-danger btn-lg w-25" disabled>D</button>
-                            <button type="button" class="btn btn-danger btn-lg w-25" disabled>E</button>
-                            <button type="button" class="btn btn-danger btn-lg w-25" disabled>F</button>
+                            <button type="button" class="btn btn-success btn-lg w-25" disabled>D</button>
+                            <button type="button" class="btn btn-success btn-lg w-25" disabled>E</button>
+                            <button type="button" class="btn btn-success btn-lg w-25" disabled>F</button>
                         </li>
 
                         <li class="mb-1">
@@ -126,7 +126,7 @@ function decInput() {
                         </li>
 
                         <li class="mb-1">
-                            <button type="button" class="btn btn-outline-warning btn-lg w-25" onclick="cls()">Clear</button>
+                            <button type="button" class="btn btn-outline-warning btn-lg w-25" onclick="cls() text-center">Clear</button>
                             <button type="button" class="btn btn-outline-secondary btn-lg w-25" onclick="addValue('0')">0</button>
                             <button type="button" class="btn btn-outline-success btn-lg w-25" onclick="calculateOutput()">=</button>
                         </li>
@@ -177,7 +177,7 @@ function binInput() {
                           </li>
   
                           <li class="mb-1">
-                              <button type="button" class="btn btn-outline-warning btn-lg w-25" onclick="cls()">Clear</button>
+                              <button type="button" class="btn btn-outline-warning btn-lg w-25 text-center" onclick="cls()">Clear</button>
                               <button type="button" class="btn btn-outline-secondary btn-lg w-25" onclick="addValue('0')">0</button>
                               <button type="button" class="btn btn-outline-success btn-lg w-25" onclick="calculateOutput()">=</button>
                           </li>
@@ -226,7 +226,7 @@ function hexInput() {
                             </li>
     
                             <li class="mb-1">
-                                <button type="button" class="btn btn-outline-warning btn-lg w-25" onclick="cls()">Clear</button>
+                                <button type="button" class="btn btn-outline-warning btn-lg w-25 text-center" onclick="cls()">Clear</button>
                                 <button type="button" class="btn btn-outline-secondary btn-lg w-25" onclick="addValue('0')">0</button>
                                 <button type="button" class="btn btn-outline-success btn-lg w-25" onclick="calculateOutput()">=</button>
                             </li>
