@@ -38,7 +38,7 @@ function currentTime() {
 setInterval(currentLesson, 1000)
 function currentLesson() {
     var current = "";
-    var currentDate = new Date()
+    var currentDate = new Date("5 Aug 2022 12:00:00")
     var currentHour = currentDate.getHours()
     var currentDay = currentDate.getDay();
     //get current day of the week, 1 = monday, 5 = friday

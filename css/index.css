@@ -95,8 +95,9 @@ body > div > div:nth-child(5) > div.personality.row > div:nth-child(1) > div:nth
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(255, 133, 133) 0%, rgba(35,76,255,1) 100%);
+    background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
     background-size: 400% 400%;
+    
 }
 
 body > div > div:nth-child(5) > div.personality.row > div:nth-child(1) > div:nth-child(2) > div > div.card-header {
@@ -104,7 +105,7 @@ body > div > div:nth-child(5) > div.personality.row > div:nth-child(1) > div:nth
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(230, 120, 255) 0%, rgb(87, 118, 255) 100%);
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
     background-size: 400% 400%;
 }
 
@@ -113,7 +114,7 @@ body > div > div:nth-child(5) > div.personality.row > div:nth-child(1) > div:nth
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    background: linear-gradient(90deg, rgba(82,196,255,1) 0%, rgb(90, 255, 109) 0%, rgba(35,76,255,1) 100%);
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
     background-size: 400% 400%;
 }
 
