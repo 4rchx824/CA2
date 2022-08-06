@@ -3,7 +3,7 @@
 setInterval(currentTime, 1000)
 
 function currentTime() {
-    const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     var newDate = new Date()
     var currentTime;
@@ -27,9 +27,9 @@ function currentTime() {
         } else {
             currentHour = `${newDate.getHours()}`
         }
-        currentTime = `${days[newDate.getDay() - 1]}, ${newDate.getDate()} ${months[newDate.getMonth()]} ${newDate.getFullYear()} ${currentHour}:${currentMins}:${currentSecs}`
+        currentTime = `${days[newDate.getDay()]}, ${newDate.getDate()} ${months[newDate.getMonth()]} ${newDate.getFullYear()} ${currentHour}:${currentMins}:${currentSecs}`
     } else {
-        currentTime = `${days[newDate.getDay() - 1]}, ${newDate.getDate()} ${months[newDate.getMonth()]} ${newDate.getFullYear()} ${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()}`
+        currentTime = `${days[newDate.getDay()]}, ${newDate.getDate()} ${months[newDate.getMonth()]} ${newDate.getFullYear()} ${newDate.getHours()}:${newDate.getMinutes()}:${newDate.getSeconds()}`
     }
     
     document.getElementById("date").innerHTML = currentTime
@@ -37,8 +37,7 @@ function currentTime() {
 
 setInterval(currentLesson, 1000)
 function currentLesson() {
-    var current = "";
-    var currentDate = new Date("5 Aug 2022 12:00:00")
+    var currentDate = new Date()
     var currentHour = currentDate.getHours()
     var currentDay = currentDate.getDay();
     //get current day of the week, 1 = monday, 5 = friday
@@ -47,30 +46,58 @@ function currentLesson() {
     if ((currentHour >= 18 && currentMins > 0 )|| (currentHour < 8 && currentMins > 0) || currentDay > 5 || currentDay == 0) {
         setCard("HOME")
     } else {
+        var days = document.getElementsByClassName("days")
+
+        var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        console.log(currentDay)
+        for (var i = 0; i < days.length; i++) {
+            if (days[i].innerHTML == weekdays[currentDay]) {
+                console.log(weekdays[currentDay])
+                days[i].style.background = `rgba(90, 201, 235, 0.3)`
+                days[i].innerHTML = `${weekdays[currentDay]} (Today)`
+            }
+        }
+        var CAT = document.getElementsByClassName("CAT")
+        var CPR = document.getElementsByClassName("CPR")
+        var ECG = document.getElementsByClassName("ECG")
+        var FED = document.getElementsByClassName("FED")
+        var FOC = document.getElementsByClassName("FOC")
+        var FOP = document.getElementsByClassName("FOP")
+        var MATH = document.getElementsByClassName("MATH")
+        var SFL = document.getElementsByClassName("SFL")
+
         switch (currentDay) {
             case 1:
                 if ((currentMins >= 0 && currentHour > 15 || currentMins >= 30 && currentHour >= 15) && (currentMins >= 0 && currentHour < 18)) {
                     setCard("FED")
+                    FED[1].style.backgroundColor = `rgb(235, 235, 235)`
                 } else {
                     setCard("NONE")
                 }
                 break;
             
             case 2:
-                if ((currentMins >= 0 && currentHour >= 13) && (currentMins <= 0 && currentHour <= 15)) {
+                if ((currentMins >= 0 && currentHour >= 13) && (currentMins >= 0 && currentHour < 15)) {
                     setCard("ECG")
-                } else if ((currentMins >= 0 && currentHour >= 16) && (currentMins <= 0 && currentHour <= 18)) {
+                    ECG[1].style.backgroundColor = `rgb(235, 235, 235)`
+                    
+                } else if ((currentMins >= 0 && currentHour >= 16) && (currentMins >= 0 && currentHour < 18)) {
                     setCard("SFL")
+                    SFL[1].style.backgroundColor = `rgb(235, 235, 235)`
                 } else {
                     setCard("NONE")
                 }
                 break;
 
             case 3:
+                
                 if ((currentMins >= 0 && currentHour > 9 || currentMins >= 30 && currentHour >= 9) && (currentMins >= 0 && currentHour < 11)) {
                     setCard("MATH")
-                } else if ((currentMins >= 0 && currentHour >= 12) && (currentMins <= 0 && currentHour <= 15)) {
+                    console.log(MATH)
+                    MATH[1].style.backgroundColor = `rgb(235, 235, 235)`
+                } else if ((currentMins >= 0 && currentHour >= 12) && (currentMins >= 0 && currentHour < 15)) {
                     setCard("FOP")
+                    FOP[1].style.backgroundColor = `rgb(235, 235, 235)`
                 } else {
                     setCard("NONE")
                 }
@@ -79,10 +106,13 @@ function currentLesson() {
             case 4:
                 if ((currentMins >= 0 && currentHour >= 8) && (currentMins < 30 && currentHour <= 10 || currentMins >= 0 && currentHour < 10)) {
                     setCard("FED")
-                } else if ((currentMins >= 0 && currentHour >= 13) && (currentMins <= 0 && currentHour <= 15)) {
+                    FED[2].style.backgroundColor = `rgb(235, 235, 235)`
+                } else if ((currentMins >= 0 && currentHour >= 13) && (currentMins >= 0 && currentHour < 15)) {
                     setCard("FOC")
-                } else if ((currentMins >= 0 && currentHour >= 15) && (currentMins <= 0 && currentHour <= 18)) {
+                    FOC[1].style.backgroundColor = `rgb(235, 235, 235)`
+                } else if ((currentMins >= 0 && currentHour >= 15) && (currentMins >= 0 && currentHour < 18)) {
                     setCard("FOP")
+                    FOP[2].style.backgroundColor = `rgb(235, 235, 235)`
                 } else {
                     setCard("NONE")
                 }
@@ -92,18 +122,24 @@ function currentLesson() {
                 console.log(currentHour, currentMins)
                 if ((currentMins >= 0 && currentHour >= 8) && (currentMins >= 0 && currentHour < 10)) {
                     setCard("FOC")
+                    FOC[2].style.backgroundColor = `rgb(235, 235, 235)`
                 } else if ((currentMins >= 0 && currentHour >= 10) && (currentMins >= 0 && currentHour < 12)) {
                     setCard("CAT")
+                    CAT[1].style.backgroundColor = `rgb(235, 235, 235)`
                 } else if ((currentMins >= 0 && currentHour >= 13) && (currentMins < 30 && currentHour <= 14 || currentMins >= 0 && currentHour < 14)) {
                     setCard("MATH")
+                    MATH[2].style.backgroundColor = `rgb(235, 235, 235)`
                 } else if ((currentMins >= 0 && currentHour > 14 || currentMins >= 30 && currentHour >= 14) && (currentMins < 30 && currentHour <= 16 || currentMins >= 0 && currentHour < 16)) {
                     setCard("CPR")
+                    CPR[1].style.backgroundColor = `rgb(235, 235, 235)`
                 } else {
                     setCard("NONE")
                 }
                 break;
             
         }
+
+        
     }
 }
 

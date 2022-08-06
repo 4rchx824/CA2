@@ -1,6 +1,4 @@
-.carousel-control-next, .carousel-control-prev {
-    top: none;
-}
+
 
 .intro > h2 {
     text-shadow: 0px 5px 5px gray;
@@ -70,7 +68,9 @@ img {
     text-shadow: 1px 5px 10px gray;
 }
 
-
+.change {
+    background-color: blue;
+}
 
 
 .row > div > div > .row > ul > li {
@@ -81,9 +81,6 @@ img {
     text-align: justify;
 }
 
-.font-italic {
-    font-style: italic;
-}
 
 /* .pictures {
     width: 50%;
@@ -194,19 +191,14 @@ body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > d
 }
 
 
-#carouselExampleIndicators > div.carousel-inner.shadow-lg > div > div {
-    height: 507px;
-}
 
-.carousel-inner {
-    height: 507px;
-}
+
 
 
 
 
 /* Timetable coloring */
-div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table > thead > tr > th {
+.time {
     background-color: rgba(90, 201, 235, 0.2)
 }
 
@@ -239,7 +231,6 @@ div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table >
 
 
 
-
 .FOC {
     background-color: rgba(145, 255, 255, 0.5);
 }
@@ -253,7 +244,7 @@ div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table >
 
 
 .MATH {
-    background-color: rgba(255, 255, 200, 0.5);
+    background-color: rgba(255, 255, 150, 0.5);
 }
 
 
@@ -261,6 +252,10 @@ div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table >
 
 .SFL {
     background-color: rgba(135, 135, 255, 0.25);
+}
+
+.current {
+    background-color: rgb(235, 235, 235);
 }
 
 
@@ -278,8 +273,65 @@ div.timetable.row.mb-5.justify-content-center > div:nth-child(3) > div > table >
 
 /* Responsive CSS for mobile */
 
-/* @media (max-width: 576px) {
-    .introImg {
-        display: none;
+@media (max-width: 576px) {
+    #carouselExampleIndicators > div.carousel-inner.shadow-lg > div > div {
+        height: 500px;
     }
-} */
+    
+    .carousel-inner {
+        height: 500px;
+    }
+}
+
+@media (min-width: 576px) {
+    #carouselExampleIndicators > div.carousel-inner.shadow-lg > div > div {
+        height: 500px;
+    }
+    
+    .carousel-inner {
+        height: 500px;
+    }
+}
+
+/* Responsive CSS for tablet */
+@media (min-width: 768px) {
+    #carouselExampleIndicators > div.carousel-inner.shadow-lg > div > div {
+        height: 650px;
+    }
+    
+    .carousel-inner {
+        height: 650px;
+    }
+}
+
+/* Responsive CSS for Laptops */
+@media (min-width: 1400px) {
+    #carouselExampleIndicators > div.carousel-inner.shadow-lg > div > div {
+        height: 700px;
+    }
+    
+    .carousel-inner {
+        height: 700px;
+    }
+}
+
+@media (min-width: 1650px) {
+    #carouselExampleIndicators > div.carousel-inner.shadow-lg > div > div {
+        height: 550px;
+    }
+    
+    .carousel-inner {
+        height: 550px;
+    }
+}
+
+
+.progressCircle {
+    background: radial-gradient(white 50%, transparent 51%),
+    conic-gradient(transparent 0deg 0deg, gainsboro 0deg 360deg),
+    conic-gradient(white 0deg, white 90deg, white 180deg, white);
+
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}

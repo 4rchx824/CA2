@@ -126,7 +126,7 @@ function decInput() {
                         </li>
 
                         <li class="mb-1">
-                            <button type="button" class="btn btn-outline-warning btn-lg w-25" onclick="cls() text-center">Clear</button>
+                            <button type="button" class="btn btn-outline-warning btn-lg w-25" onclick="cls()">Clear</button>
                             <button type="button" class="btn btn-outline-secondary btn-lg w-25" onclick="addValue('0')">0</button>
                             <button type="button" class="btn btn-outline-success btn-lg w-25" onclick="calculateOutput()">=</button>
                         </li>

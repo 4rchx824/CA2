@@ -72,3 +72,9 @@
 .sticky + .body {
     padding-top: 60px;
 }
+
+@media (max-width: 576px) {
+    .body.container-fluid {
+        width: 85% !important;
+    }
+}

@@ -4,7 +4,8 @@ var str = document.getElementById("randomise").innerHTML
 
 var loops = []
 for (var i = 0; i < str.length; i++) {
-    loops.push(Math.floor(Math.random() * 50) + 50)
+    loops.push(Math.floor(Math.random() * 30) + 20)
+    //10 = 1 second
 }
 
 setInterval(randomise, 75)
@@ -21,7 +22,7 @@ function randomise() {
     //desiredStr = string array
 
     var currentStr = str.split("")
-    console.log(currentStr)
+    // console.log(currentStr)
     var loopsLeftIndex = [];
     for (var i = 0; i < loops.length; i++) {
         if (loops[i] > 0) {
@@ -31,8 +32,8 @@ function randomise() {
 
     if (loopsLeftIndex.length > 0) {
         for (var j = 0; j < loopsLeftIndex.length; j++) {
-            console.log(loops[loopsLeftIndex[j]])
-            console.log(loops)
+            // console.log(loops[loopsLeftIndex[j]])
+            // console.log(loops)
             if (loops[loopsLeftIndex[j]] > 0) {
                 loops[loopsLeftIndex[j]]--;
                 currentStr[loopsLeftIndex[j]] = randomiseChar()

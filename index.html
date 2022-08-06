@@ -40,6 +40,9 @@
     <!-- Script for back to top button -->
     <script src="./js/backToTop.js" async></script>
     <script src="./js/modal.js" async></script>
+    <script src="./js/indexResp.js" async></script>
+    <script src="./js/circularProgress.js" async></script>
+
 
     <script src="./js/randomiser.js" async></script>
 
@@ -309,7 +312,7 @@
 
       <div class="row">
         <div class="valuesEducation row mx-auto">
-          <div class="col-md-3">
+          <div class="col-md-6 col-xxl-3">
             <div class="title row text-center" id="values">
               <!-- Personal Values Test Results: https://personalvalu.es/results/7f6fa87a-dbd8-495d-b963-13bb3643ed87 -->
               <!-- Quotes from: https://www.brainyquote.com/ -->
@@ -362,7 +365,7 @@
                           </p>
 
                           <blockquote>
-                            <q class="font-italic">
+                            <q class="fst-italic fw-light">
                               Ethics is knowing the difference between what you
                               have a right to do and what is right to do.
                             </q>
@@ -389,7 +392,7 @@
                           </p>
 
                           <blockquote>
-                            <q class="font-italic">
+                            <q class="fst-italic fw-light">
                               There is nothing on this earth more to be prized
                               than true friendship.
                             </q>
@@ -420,7 +423,7 @@
                           </p>
 
                           <blockquote>
-                            <q class="font-italic">
+                            <q class="fst-italic fw-light">
                               You must gain control over your money or the lack
                               of it will forever control you.
                             </q>
@@ -460,7 +463,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-6 col-xxl-3">
             <div class="title row text-center" id="education">
               <h2>Education</h2>
               <hr />
@@ -663,7 +666,7 @@
             </div>
           </div>
 
-          <div class="cert col-md-6">
+          <div class="cert col-md-12 col-xxl-6">
             <div class="title row text-center" id="cert">
               <h2>Certificates</h2>
               <hr />
@@ -793,14 +796,7 @@
                     and meaningful, social interactions and feel drawn to calmer
                     environments.
                   </p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
+                  <div class="progressCircle mx-auto"></div>
                   <h6 class="text-center mt-1">
                     Introverted <br />
                     62%
@@ -821,14 +817,7 @@
                     down-to-earth, with a strong focus on what is happening or
                     very likely to happen.
                   </p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
+                  <div class="progressCircle mx-auto"></div>
                   <h6 class="text-center mt-1">
                     Observant <br />
                     64%
@@ -849,14 +838,7 @@
                     and sensitivity, prioritizing empathy, social harmony, and
                     cooperation.
                   </p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
+                  <div class="progressCircle mx-auto"></div>
                   <h6 class="text-center mt-1">
                     Feeling <br />
                     53%
@@ -877,14 +859,7 @@
                     highly organized. You value clarity and prefer planning to
                     spontaneity.
                   </p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
+                  <div class="progressCircle mx-auto"></div>
                   <h6 class="text-center mt-1">
                     Judging <br />
                     51%
@@ -905,14 +880,7 @@
                     sensitive to stress, success-driven, perfectionistic, and
                     eager to improve.
                   </p>
-                  <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
+                  <div class="progressCircle mx-auto"></div>
                   <h6 class="text-center mt-1">
                     Turbulent <br />
                     57%
@@ -956,6 +924,9 @@
                 </li>
                 <li class="p-1 rounded MATH mb-2">MATH - Mathematics</li>
                 <li class="p-1 rounded SFL mb-2">SFL - Sports for Life</li>
+                <li class="p-1 rounded current mb-2 text-center fst-italic fw-light">
+                  Current Class (if any)
+                </li>
               </ul>
             </div>
           </div>
@@ -993,17 +964,17 @@
           <div class="table-responsive w-100 shadow-lg">
             <table class="table-bordered w-100 mx-auto">
               <thead>
-                <th>&nbsp;</th>
-                <th colspan="2" class="text-center px-3">8:00 - 9:00</th>
-                <th colspan="2" class="text-center px-3">9:00 - 10:00</th>
-                <th colspan="2" class="text-center px-3">10:00 - 11:00</th>
-                <th colspan="2" class="text-center px-3">11:00 - 12:00</th>
-                <th colspan="2" class="text-center px-3">12:00 - 13:00</th>
-                <th colspan="2" class="text-center px-3">13:00 - 14:00</th>
-                <th colspan="2" class="text-center px-3">14:00 - 15:00</th>
-                <th colspan="2" class="text-center px-3">15:00 - 16:00</th>
-                <th colspan="2" class="text-center px-3">16:00 - 17:00</th>
-                <th colspan="2" class="text-center px-3">17:00 - 18:00</th>
+                <th class="time">&nbsp;</th>
+                <th colspan="2" class="time text-center px-3">8:00 - 9:00</th>
+                <th colspan="2" class="time text-center px-3">9:00 - 10:00</th>
+                <th colspan="2" class="time text-center px-3">10:00 - 11:00</th>
+                <th colspan="2" class="time text-center px-3">11:00 - 12:00</th>
+                <th colspan="2" class="time text-center px-3">12:00 - 13:00</th>
+                <th colspan="2" class="time text-center px-3">13:00 - 14:00</th>
+                <th colspan="2" class="time text-center px-3">14:00 - 15:00</th>
+                <th colspan="2" class="time text-center px-3">15:00 - 16:00</th>
+                <th colspan="2" class="time text-center px-3">16:00 - 17:00</th>
+                <th colspan="2" class="time text-center px-3">17:00 - 18:00</th>
               </thead>
               <tbody>
                 <tr>
