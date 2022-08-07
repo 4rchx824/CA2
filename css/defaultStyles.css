@@ -73,6 +73,12 @@
     padding-top: 60px;
 }
 
+hr {
+    height: 3px !important; 
+    background-color: rgba(50, 149, 255, 0.75) !important;
+    opacity: 1;
+}
+
 
 .img-fluid {
     padding-top: 60px;
@@ -83,7 +89,7 @@
         width: 85% !important;
     }
     
-    .container-fluid {
+    #navbar > .container-fluid {
         width: 85% !important;
     }
 }

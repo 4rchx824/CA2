@@ -49,10 +49,8 @@ function currentLesson() {
         var days = document.getElementsByClassName("days")
 
         var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-        console.log(currentDay)
         for (var i = 0; i < days.length; i++) {
             if (days[i].innerHTML == weekdays[currentDay]) {
-                console.log(weekdays[currentDay])
                 days[i].style.background = `rgba(90, 201, 235, 0.3)`
                 days[i].innerHTML = `${weekdays[currentDay]} (Today)`
             }
@@ -93,7 +91,6 @@ function currentLesson() {
                 
                 if ((currentMins >= 0 && currentHour > 9 || currentMins >= 30 && currentHour >= 9) && (currentMins >= 0 && currentHour < 11)) {
                     setCard("MATH")
-                    console.log(MATH)
                     MATH[1].style.backgroundColor = `rgb(235, 235, 235)`
                 } else if ((currentMins >= 0 && currentHour >= 12) && (currentMins >= 0 && currentHour < 15)) {
                     setCard("FOP")
@@ -119,7 +116,6 @@ function currentLesson() {
                 break;
 
             case 5:
-                console.log(currentHour, currentMins)
                 if ((currentMins >= 0 && currentHour >= 8) && (currentMins >= 0 && currentHour < 10)) {
                     setCard("FOC")
                     FOC[2].style.backgroundColor = `rgb(235, 235, 235)`

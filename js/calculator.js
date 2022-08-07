@@ -5,7 +5,6 @@ var calcType = 0;
 
 function setCalcType(a) {
   calcType = a;
-  console.log(calcType);
 }
 
 function calculatorMode(calcType) {
@@ -87,6 +86,7 @@ function calculatorMode(calcType) {
 //dec
 
 function decInput() {
+  cls()
   calculatorMode(calcType);
   document.getElementById("calculator").style.display = "block";
   var parentElement = document.getElementById("calculatorBtns");
@@ -138,6 +138,7 @@ function decInput() {
 
 //bin
 function binInput() {
+  cls()
   calculatorMode(calcType);
   document.getElementById("calculator").style.display = "block";
   var parentElement = document.getElementById("calculatorBtns");
@@ -188,6 +189,7 @@ function binInput() {
 }
 //hex
 function hexInput() {
+  cls()
   calculatorMode(calcType);
   document.getElementById("calculator").style.display = "block";
   var parentElement = document.getElementById("calculatorBtns");
@@ -241,18 +243,21 @@ function cls() {
 }
 
 function addValue(char) {
-  document.getElementById("calculatorOutput").innerHTML += char;
+  if (document.getElementById("calculatorOutput").innerHTML.length > 16) {
+    document.getElementById("calculatorOutput").innerHTML = "MAX CHARACTER LENGTH"
+  } else {
+    document.getElementById("calculatorOutput").innerHTML += char;
+  }
 }
 
 function calculateOutput() {
   var calcInput = document.getElementById("calculatorOutput").innerHTML;
-  if (calcInput == "&nbsp;") {
+  if (calcInput == "&nbsp;" || (isNaN(calcInput) && calcType < 5) || calcInput == "MAX CHARACTER LENGTH" || calcInput.length > 16) {
+    document.getElementById("calculatorOutput").innerHTML = "ERROR: PLEASE CLEAR"
+    // document.getElementById("calculatorOutput").innerHTML = "";
     return 0;
   } else {
-    console.log(calcInput);
-    console.log(calcType);
     var finalOutput = "";
-    var calculatorTitle = document.getElementById("calculatorMode");
 
     switch (calcType) {
       case 1:
@@ -281,14 +286,15 @@ function calculateOutput() {
     }
   }
 
-  //   if (finalOutput > 500000) {
-  //     document.getElementById("calculatorOutput").innerHTML =
-  //       " ERROR: Output value too big! ";
-  //   } else {
-  //     document.getElementById("calculatorOutput").innerHTML = finalOutput;
-  //   }
+  if (finalOutput.length > 16) {
+    document.getElementById("calculatorOutput").innerHTML = "ERROR: OUTPUT TOO BIG";
+  } else {
+    document.getElementById("calculatorOutput").innerHTML = finalOutput;
+  }
 
-  document.getElementById("calculatorOutput").innerHTML = finalOutput;
+
+
+  
 }
 
 //Calculation JS

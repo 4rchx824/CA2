@@ -21,7 +21,6 @@ function write() {
         if (j == txt.length - 1) {
             clearInterval(typewriter)
         } else {
-            console.log(j)
             document.getElementById("typewriter").innerHTML = "";
             text = "";
             i = 0;

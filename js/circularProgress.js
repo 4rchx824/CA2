@@ -1,5 +1,4 @@
 const personality = document.querySelector(".typesCard");
-console.log(personality)
 
 
 const options = {
@@ -26,9 +25,6 @@ function animateProgress() {
   var percentage = [62, 64, 53, 51, 57];
   var colors = ["#4298b4", "#e4ae3a", "#33a474", "#88619a", "#f25e62"];
   var counts = [0, 0, 0, 0, 0]
-
-  console.log(circles)
-  console.log(circles.length)
   
   for (var i = 0; i < circles.length; i++) {
     var degree = Math.floor(percentage[i]/100 * 360)

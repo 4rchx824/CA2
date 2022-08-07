@@ -17,10 +17,9 @@
     text-shadow: 0px 5px 5px gray;
 }
 
-hr {
-    height: 3px !important; 
-    background-color: rgba(50, 149, 255, 0.75) !important;
-    opacity: 1;
+
+.btn-focus {
+    box-shadow: none;
 }
 
 .onimage {
@@ -48,27 +47,31 @@ img {
     box-shadow: 0px 5px 10px gray;
 }
 
+.btn-focus {
+    box-shadow: none;
+}
 
 #body > div:nth-child(3) > div > div > div > button {
     box-shadow: none;
 }
 
-
-#body > div:nth-child(4) > div > div.cert.col-md-6 > div:nth-child(2) > div > button {
+#body > div:nth-child(4) > div > div.cert.col-md-12.col-xxl-6 > div:nth-child(2) > div.row.mx-auto.mb-3 > button {
     box-shadow: none;
 }
 
-#body > div:nth-child(4) > div > div.cert.col-md-6 > div:nth-child(2) > div > button > img:hover {
+#body > div:nth-child(4) > div > div.cert.col-md-12.col-xxl-6 > div:nth-child(2) > div:nth-child(2) > button {
+    box-shadow: none;
+}
+
+
+
+#body > div:nth-child(4) > div > div.cert.col-md-12.col-xxl-6 > div:nth-child(2) > div:nth-child(2) > button > img:hover {
     box-shadow: 0px 5px 10px gray;
 }
 
-/* .row > .valuesEducation > div > div.title.row {
-    text-decoration: underline;
-    text-underline-offset: 0.1em;
-    text-decoration-color: rgba(50, 149, 255, 0.75);
-    padding: 1em;
-    text-shadow: 1px 5px 10px gray;
-} */
+#body > div:nth-child(4) > div > div.cert.col-md-12.col-xxl-6 > div:nth-child(2) > div.row.mx-auto.mb-3 > button > img:hover {
+    box-shadow: 0px 5px 10px gray;
+}
 
 .title.row {
     text-underline-offset: 0.1em;
@@ -91,9 +94,6 @@ img {
 }
 
 
-/* .pictures {
-    width: 50%;
-} */
 
 
 body > div > div:nth-child(5) > div.personality.row > div:nth-child(1) > div:nth-child(1) > div > div.card-header {
@@ -295,6 +295,7 @@ body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > d
         font-size: 1.5em;
         text-shadow: 0px 1px 10px white;
     }
+
 }
 
 @media (min-width: 576px) {
@@ -320,6 +321,10 @@ body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > d
     #typewriter {
         font-size: 2em;
         text-shadow: 0px 1px 10px white;
+    }
+    
+    #begin {
+        top: 60%;
     }
 }
 

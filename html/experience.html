@@ -31,18 +31,19 @@
           crossorigin="anonymous"
         ></script>
 
-        <!-- <script src="/js/intersection.js" async></script> -->
     
         <!-- Script for calculator -->
         <script src="../js/calculator.js" async></script>
 
         <!-- Script for back to top button -->
-        <script src="/js/backToTop.js" async></script>
+        <script src="../js/backToTop.js" async></script>
 
         <!-- Script for sticky navbar -->
         <script src="../js/stickyNavbar.js" async></script>
 
-        <script src="../js/modal.js" async></script>
+        <script src="../js/responsiveSize.js" async></script>
+
+
     
         <link href="../css/defaultStyles.css" rel="stylesheet" />
         <link href="../css/experience.css" rel="stylesheet" />
@@ -167,18 +168,103 @@
                 <hr />
             </div>
 
-            <div class="row">
+            <div class="row d-flex align-items-center">
                 <div class="col-sm-6">
                     <p class="p-1">
-                        I am currently enjoying my life is Poly, the whole class seems very relaxed, and everyone seems to be comfortable and get along well with each other!
+                        I am currently enjoying my life in Poly, the whole class seems very relaxed, and everyone seems to be comfortable and get along well with each other!
                     </p>
 
                     <p class="p-1">
-                        My current modules include Fundamentals of Programming, Fundamentals of Front-End Web Development, Fundamentals of Computing, Mathematics, Communication for Project Proposal, Critical and Analytical Thinking and Sports for Life! The photo gallery on the right has some of our group selfies up until now.
+                        My current modules include Fundamentals of Programming, Fundamentals of Front-End Web Development, Fundamentals of Computing, Mathematics, Communication for Project Proposal, Critical and Analytical Thinking and Sports for Life! Below this section is a photo gallery consisting of all the activites I have taken part of during my time in SP!
                     </p>
 
                     <p class="p-1">
-                        I have tried joining some CCAs in SP, however, I didn't manage to pass my Basketball and Badminton trials as they were very hard. Therefore, I am considering joining SOCA, SOCC or SEED. I have currently participated in one event within SP which is the One Heart Service-Learning Event! The 2nd wide picture depicts my group during the bonding day!
+                        SP has many CCAs, I have tried joining several CCAs including: Basketball, Badminton, SOCA, SOCC, and SEED. However, I have not succeeded in getting into any one of them.
+                    </p>
+
+                    <p class="p-1">
+                      But on the bright side, I have taken part in several events which have earnt me my CCA points. These events include Freshman Orientation Camp, One Heart Service Learning Event (hosted by RP) and NDP 2022 General Volunteer (via Heartware Network).
+                    </p>
+
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <table class="table table-light table-bordered shadow">
+                          <caption>MST Grades</caption>
+                          <thead>
+                            <tr>
+                              <th scope="col" class="text-center">Module</th>
+                              <th scope="col" class="text-center">Score</th>
+                              <th scope="col" class="text-center">Grade</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">Fundamentals of Programming</td>
+                              <td class="text-center">82</td>
+                              <td class="text-center">A</td>
+                            </tr>
+
+                            <tr>
+                              <td class="text-center">Fundamentals of Computing</td>
+                              <td class="text-center">80 &#60; x &#60; 85</td>
+                              <td class="text-center">A</td>
+                            </tr>
+
+                            <tr>
+                              <td class="text-center">Front-End Web Development</td>
+                              <td class="text-center">83</td>
+                              <td class="text-center">A</td>
+                            </tr>
+
+                            <tr>
+                              <td class="text-center">Mathematics</td>
+                              <td class="text-center">77</td>
+                              <td class="text-center">B+</td>
+                            </tr>
+
+                            <tr>
+                              <td class="text-center">Communicating for Project Effectiveness (Proposal)</td>
+                              <td class="text-center">80</td>
+                              <td class="text-center">A</td>
+                            </tr>
+
+                            <tr>
+                              <td class="text-center">Critical and Analytical Thinking</td>
+                              <td class="text-center">77</td>
+                              <td class="text-center">A</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+
+                    <p class="mt-5 mb-5">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-sm-12 text-center mb-3">
+                          <a href="#gallery">
+                            <button type="button" class="btn btn-outline-primary shadow w-75">
+                              SP Gallery
+                            </button>
+                          </a>
+                        </div>
+
+                        <div class="col-sm-12 text-center mb-3">
+                          <a href="#calc">
+                            <button type="button" class="btn btn-outline-primary shadow w-75">
+                              Programmer's Calculator
+                            </button>
+                          </a>
+                        </div>
+
+                        <div class="col-sm-12 text-center mb-3">
+                          <a href="#coursesOffered">
+                            <button type="button" class="btn btn-outline-primary shadow w-75">
+                              Courses Offered in SP
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                     </p>
                 </div>
 
@@ -204,7 +290,7 @@
 
 
             <div class="row">
-              <h2 class="title text-center mt-5">My SP Gallery</h2>
+              <h2 class="title text-center mt-5" id="gallery">My SP Gallery</h2>
               <hr />
               <div class="col-sm-8 p-0">
                 <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#class1">
@@ -356,6 +442,7 @@
 
                 <div class="col-sm-12 col-md-6">
                     <div class="container p-0">
+                      <h3 class="text-center fw-light fst-italic p-3">Select a calculator mode</h3>
                         <div class="card mb-3 shadow">
                             <div class="card-header bg-success">
                                 <h5 class="text-center">Decimal</h5>
@@ -404,8 +491,8 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12 text-right w-75 mx-auto p-1 h-50">
-                                <h2 class="shadow-lg border p-1 rounded" id="calculatorOutput">
-
+                                <h2 class="shadow-lg border p-1 rounded fw-light" id="calculatorOutput">
+                                  Do not use extreme values!
                                 </h2>
                             </div>
                         </div>
@@ -465,52 +552,56 @@
                 <div class="row">
                     <div class="col-sm-12 col-lg-3 mb-5" id="dcitp">
                         <div class="card shadow-lg">
-                            <div class="card-header">
+                            <div class="courseName card-header d-flex align-items-center justify-content-center">
                                 <h5 class="title text-center">Common ICT Programme (S32)</h5>
                             </div>
 
                             <img src="../graphics/experience/dcitpimg.jpg" class="card-img-top" alt="...">
 
-                            <div class="card-body">
+                            <div class="description card-body">
                                 <p>
                                     Are you passionate about Information Technology (IT) but undecided about which IT course to take? The Common ICT Programme is designed to help you make an informed choice. At the end of Year 1 Semester 1, you will be able to make an informed choice in selecting one of the IT courses that you wish to pursue:
                                 </p>
 
-                                <p>
-                                    <ul>
-                                        <li>S30 Diploma in Applied AI & Analytics (DAAA)</li>
-                                        <li>S54 Diploma in Infocomm Security Management (DISM)</li>
-                                        <li>S69 Diploma in Information Technology (DIT)</li>
-                                    </ul>
-                                </p>
+                                <ul class="list">
+                                  <li>S30 Diploma in Applied AI & Analytics (DAAA)</li>
+                                  <li>S54 Diploma in Infocomm Security Management (DISM)</li>
+                                  <li>S69 Diploma in Information Technology (DIT)</li>
+                              </ul>
                             </div>
                         </div>
 
                         <div class="card shadow-lg mt-1">
                             <div class="card-body text-center">
-                                    Net JAE (ELR2B2): 3 to 13
+                              Net JAE (ELR2B2): 3 to 13
+
+                              <p class="text-center">
+                                <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-ict-programme/overview" target="_blank">
+                                  <button type="button" class="btn w-75 mt-1" id="dcitpBtn">Learn More</button>
+                                </a>
+                              </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-lg-3 mb-5" id="daaa">
                         <div class="card shadow-lg">
-                            <div class="card-header">
+                            <div class="courseName card-header d-flex align-items-center justify-content-center">
                                 <h5 class="title text-center">Applied AI and Analytics (S30)</h5>
                             </div>
 
                             <img src="../graphics/experience/daaaimg.jpg" class="card-img-top" alt="...">
 
-                            <div class="card-body">
+                            <div class="description card-body">
                                 <p>
                                     Believe it or not, you interact with a form of AI (Artificial Intelligence) every day! From Siri to Google Home and online chatbots, data analytics and AI make it possible for devices and programmes to respond to us in an almost human-like manner.
-                                </p>
 
-                                <p>
+                                    <br /><br />
+
                                     This is changing how we live, work and communicate. Soon, it will become an integral part of our daily lives. The question is, are you interested to develop the next AI application that benefits our world?
-                                </p>
 
-                                <p>
+                                    <br /><br />
+
                                     If your answer is yes, the Diploma in Applied AI & Analytics (DAAA) is perfect for you!
                                 </p>
                             </div>
@@ -519,24 +610,30 @@
                         <div class="card shadow-lg mt-1">
                             <div class="card-body text-center">
                                     Net JAE (ELR2B2): 3 to 8
+
+                                    <p class="text-center">
+                                      <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/applied-AI-and-analytics" target="_blank">
+                                        <button type="button" class="btn w-75 mt-1" id="daaaBtn">Learn More</button>
+                                      </a>
+                                    </p>
                             </div>
                         </div>
                     </div>
                     
                     <div class="col-sm-12 col-lg-3 mb-5" id="dism">
                         <div class="card shadow-lg">
-                            <div class="card-header">
+                            <div class="courseName card-header d-flex align-items-center justify-content-center">
                                 <h5 class="title text-center">Infocomm Security Management (S54)</h5>
                             </div>
 
                             <img src="../graphics/experience/dismimg.jpg" class="card-img-top" alt="...">
 
-                            <div class="card-body">
+                            <div class="description card-body">
                                 <p>
                                     The threat has never been so real. The more we rely on the Internet to store and manage important information, the more we need to keep it safe from cybercriminals. Be a part of the elite force in keeping the Cyber World SAFE!
-                                </p>
 
-                                <p>
+                                    <br /><br />
+
                                     Being a Diploma in Infocomm Security Management (DISM) student gives you the competitive edge for a boost in your future studies and career. You can look forward to an interesting curriculum that covers offensive attacks, defensive methods and investigative skills.
                                 </p>
                             </div>
@@ -545,43 +642,55 @@
                         <div class="card shadow-lg mt-1">
                             <div class="card-body text-center">
                                     Net JAE (ELR2B2): 4 to 11
+
+                                    <p class="text-center">
+                                      <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/infocomm-security-management" target="_blank">
+                                        <button type="button" class="btn btn-outline-warning w-75 mt-1" id="dismBtn">Learn More</button>
+                                      </a>
+                                    </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-lg-3 mb-5" id="dit">
                         <div class="card shadow-lg">
-                            <div class="card-header">
+                            <div class="courseName card-header d-flex align-items-center justify-content-center">
                                 <h5 class="title text-center">Information Technology (S69)</h5>
                             </div>
 
                             <img src="../graphics/experience/ditimg.jpg" class="card-img-top" alt="...">
 
-                            <div class="card-body">
+                            <div class="description card-body">
                                 <p>
                                     Information Technology (IT) is the driving force behind many digital transformations we see and use today, including the Smart Nation vision.
-                                </p>
 
-                                <p>
+                                    <br /><br />
+
                                     In Singapore, there continues to be a strong demand for IT professionals in Software Development and User Experience (UX) design, and in Immersive Simulation Technologies such as Augmented and Virtual Reality.
-                                </p>
 
-                                <p>
+                                    <br /><br />
+
                                     The Diploma in Information Technology (DIT) course is positioned to focus on Software & Applications development with three specialist tracks:
-                                </p>
 
-                                <p>
-                                    <ul>
-                                        <li>Software Development</li>
-                                        <li>User Experience (UX)</li>
-                                        <li>Immersive Simulation</li>
-                                    </ul>
-                                </p>
+                                    <br /><br />
+
+                                  </p>
+                                  <ul class="list">
+                                    <li>Software Development</li>
+                                    <li>User Experience (UX)</li>
+                                    <li>Immersive Simulation</li>
+                                  </ul>
                             </div>
                         </div>
                         <div class="card shadow-lg mt-1">
                             <div class="card-body text-center">
                                     Net JAE (ELR2B2): 4 to 14
+
+                                    <p class="text-center">
+                                      <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology/what-you'll-study" target="_blank">
+                                        <button type="button" class="btn btn-outline-primary w-75 mt-1" id="ditBtn">Learn More</button>                        
+                                      </a>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -612,44 +721,37 @@
         </button>
 
         <div class="container-fluid bg-primary">
-            <div class="footer container w-75 p-3">
-              <div class="row justify-content-center">
-                <div
-                  class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center"
-                >
-                  <h3 class="text-center text-white">2201001</h3>
-                </div>
-                <div
-                  class="col-sm-12 col-md-4 d-flex align-items-center justify-content-center"
-                >
-                  <h3 class="text-center text-white">DIT/FT/1A/01</h3>
-                </div>
-                <div
-                  class="col-sm-12 col-md-4 d-flex align-items-center mx-auto justify-content-center"
-                >
-                  <div class="col p-1 text-center">
-                    <a href="https://www.facebook.com/" target="_blank" class=""
-                      ><img src="../graphics/logos/facebook.png" class="w-25"
-                    /></a>
-                  </div>
-      
-                  <div class="col p-1 text-center">
-                    <a href="https://www.instagram.com/" target="_blank" class=""
-                      ><img src="../graphics/logos/instagram.png" class="w-25"
-                    /></a>
-                  </div>
-      
-                  <div class="col p-1 text-center">
-                    <a
-                      href="https://mail.google.com/mail/u/0/?ogbl#inbox"
-                      target="_blank"
-                      class=""
-                      ><img src="../graphics/logos/gmail.png" class="w-25"
-                    /></a>
-                  </div>
-                </div>
+          <div class="footer container w-75 p-3">
+            <div class="row">
+              <div class="col">
+                <h3 class="text-white">2201001</h3>
+              </div>
+    
+              <div class="col">
+                <h3 class="text-white">DIT/FT/1A/01</h3>
+              </div>
+    
+              <div class="col d-flex justify-content-around">
+                <a href="https://www.instagram.com/4rchx248/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+                </a>
+    
+                <a href="https://www.linkedin.com/in/yan-hein-latt-30b182182/" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg>
+                </a>
+    
+                <a href="mailto:YANHEIN.22@ichat.sp.edu.sg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
+        </div>
       </body>
 </html>
