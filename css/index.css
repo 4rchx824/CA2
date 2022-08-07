@@ -1,4 +1,13 @@
-
+#begin {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner > img {
+    filter: blur(2px);
+    filter: brightness(75%);
+}
 
 .intro > h2 {
     text-shadow: 0px 5px 5px gray;
@@ -281,6 +290,11 @@ body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > d
     .carousel-inner {
         height: 500px;
     }
+
+    #typewriter {
+        font-size: 1.5em;
+        text-shadow: 0px 1px 10px white;
+    }
 }
 
 @media (min-width: 576px) {
@@ -302,6 +316,11 @@ body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > d
     .carousel-inner {
         height: 650px;
     }
+
+    #typewriter {
+        font-size: 2em;
+        text-shadow: 0px 1px 10px white;
+    }
 }
 
 /* Responsive CSS for Laptops */
@@ -312,6 +331,11 @@ body > div > div:nth-child(5) > div.personality.row > div.typesCard.row.mt-3 > d
     
     .carousel-inner {
         height: 700px;
+    }
+
+    #typewriter {
+        font-size: 3em;
+        text-shadow: 0px 1px 10px white;
     }
 }
 

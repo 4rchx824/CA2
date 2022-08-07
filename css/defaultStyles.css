@@ -73,8 +73,17 @@
     padding-top: 60px;
 }
 
+
+.img-fluid {
+    padding-top: 60px;
+}
+
 @media (max-width: 576px) {
     .body.container-fluid {
+        width: 85% !important;
+    }
+    
+    .container-fluid {
         width: 85% !important;
     }
 }

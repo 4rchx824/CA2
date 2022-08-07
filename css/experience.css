@@ -4,11 +4,22 @@ hr {
     opacity: 1;
 }
 
-img {
-    height: 100%;
-    width: 100%;
+#top > div:nth-child(3) > div:nth-child(2) > button > img:hover {
+    box-shadow: 0px 5px 10px gray;
 }
 
+img {
+    width: 100%;
+    transition: box-shadow 1s;
+}
+
+img:hover {
+    box-shadow: 0px 5px 10px gray;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
 /* #dit {
     margin-top: 50px;
     transition: margin-top 1s;
@@ -75,3 +86,66 @@ body > div > div.row.mt-5 > div:nth-child(2) > div:nth-child(3) > div > div.card
 body > div > div.row.mt-5 > div:nth-child(2) > div:nth-child(4) > div > div.card-header {
     background-color: rgba(0, 153, 255, 0.5);
 }
+
+#top > div:nth-child(4) > div:nth-child(3) > button > img {
+    border-radius: 70% 69% 42% 12% / 69% 22% 78% 99%;
+}
+
+#top > div:nth-child(4) > div:nth-child(4) > button > img {
+    border-radius: 87% 81% 94% 34% / 99% 82% 84% 32%;
+}
+
+#top > div:nth-child(4) > div:nth-child(5) > button > img {
+    border-radius: 32% 82% 81% 54% / 30% 82% 31% 40%
+}
+
+#top > div:nth-child(4) > div:nth-child(6) > button > img {
+    border-radius: 59% 98% 80% 68% / 34% 82% 86% 56%
+}
+
+#top > div:nth-child(4) > div:nth-child(7) > button > img {
+    border-radius: 68% 73% 36% 37% / 27% 98% 54% 98%
+}
+
+#top > div:nth-child(4) > div:nth-child(8) > button > img {
+    border-radius: 49% 86% 37% 84% / 29% 50% 84% 52%
+}
+
+#top > div:nth-child(4) > div:nth-child(9) > button > img {
+    border-radius: 73% 93% 40% 74% / 22% 61% 61% 99%
+}
+
+#top > div:nth-child(4) > div:nth-child(10) > button > img {
+    border-radius: 83% 33% 51% 40% / 85% 40% 23% 61%
+}
+
+#top > div:nth-child(4) > div:nth-child(7) > button:nth-child(3) > img {
+    border-radius: 64% 99% 95% 68% / 67% 32% 71% 62%
+}
+
+
+/* @keyframes box {
+    0% {
+        border-radius: 70% 69% 42% 12% / 69% 22% 78% 99%
+    }
+
+    20% {
+    border-radius: 86% 43% 100% 50% / 31% 78% 33% 67%
+    }
+
+    40% {
+    border-radius: 99% 21% 36% 41% / 53% 91% 67% 88%
+    }
+
+    60% {
+    border-radius: 51% 24% 58% 63% / 61% 80% 50% 70%
+    }
+
+    80% {
+    border-radius: 49% 53% 67% 48% / 94% 42% 91% 77%
+    }
+
+    100% {
+    border-radius: 24% 51% 100% 23% / 53% 70% 83% 73%
+    }
+} */

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Homepage</title>
- 
+
     <!--Icon for Website Title-->
     <!-- Image Credit: https://www.sp.edu.sg/docs/default-source/soc/fo-2022-programme---soc-rel1.pdf?sfvrsn=131e35b3_6 -->
     <link rel="shortcut icon" href="./graphics/logos/dit.png" />
@@ -31,8 +31,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- <script src="./js/responsiveJS.js" async></script> -->
-
     <script src="./js/stickyNavbar.js" async></script>
 
     <!-- <script src="./js/tooltip.js" async></script> -->
@@ -40,11 +38,8 @@
     <!-- Script for back to top button -->
     <script src="./js/backToTop.js" async></script>
     <script src="./js/modal.js" async></script>
-    <script src="./js/indexResp.js" async></script>
     <script src="./js/circularProgress.js" async></script>
-
-
-    <script src="./js/randomiser.js" async></script>
+    <script src="./js/typewriter.js" async></script>
 
     <script src="./js/currentLesson.js" async></script>
 
@@ -83,7 +78,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a class="dropdown-item" href="./index.html">Introduction</a>
+                  <a class="dropdown-item" href="./index.html#body">Introduction</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="./index.html#values">Values</a>
@@ -156,7 +151,15 @@
       </div>
     </nav>
 
-    <!-- <div class=""> -->
+    <div class="banner">
+      
+      <img src="/graphics/index/banner.jpg" class="img-fluid rounded" id="banner">
+      <a href="#intro" class="text-white text-decoration-none" id="begin">
+        <h5 id="typewriter" class="fw-light">
+        </h5>
+      </a>
+    </div>
+    <!-- img source: https://i0.wp.com/i.redd.it/oor2svn052l61.png -->
     <div class="body container-fluid w-75" id="body">
       <div class="intro row mt-3 mb-1 text-shadow" id="intro">
         <h2>Introduction</h2>
@@ -214,6 +217,28 @@
 
             During my free time, I like to take pictures of scenaries and play
             video games, such as Valorant and more!<br /><br />
+          </p>
+
+          <p class="text-center d-flex justify-content-around">
+            <a href="#personality">
+              <button type="button" class="btn btn-primary shadow">
+                View my personality <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
+            </a>
+
+            <a href="#timetable">
+              <button type="button" class="btn btn-primary shadow">
+                View my timetable 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+              </svg>
+            </button>
+            </a>
+            
           </p>
         </div>
 
@@ -1087,7 +1112,7 @@
     </div>
 
     <button id="backToTopBtn">
-      <a href="#body"
+      <a href="#banner"
         ><svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
